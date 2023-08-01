@@ -1,13 +1,23 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "TrueThammasat";
+  src: url("./items/font/True_Text/TrueText/TtxtBB.ttf") format("truetype");
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  background-image: url("./items/BG.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
