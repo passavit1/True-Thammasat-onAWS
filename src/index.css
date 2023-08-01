@@ -20,4 +20,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+
+  @media screen and (max-width: 450px) {
+    height: auto;
+    background-attachment: fixed;
+  }
 }

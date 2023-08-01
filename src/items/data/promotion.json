@@ -1,0 +1,80 @@
+[
+
+    {   
+        "id":1,
+        "name":"ipad-air5",
+        "model":[
+            {
+                "model":"256GB",
+                "choice":[
+                    {  
+                    "rrp" : "35,900",
+                    "rc":399,
+                    "ttlPaid":"39,090",
+                    "ttlPaidAll":"43,378"
+                },
+                {
+                    "rrp" : "35,900",
+                    "rc":499,
+                    "ttlPaid":"38,590",
+                    "ttlPaidAll":"43,578"
+                },
+                {
+                    "rrp" : "35,900",
+                    "rc":649,
+                    "ttlPaid":"38,090",
+                    "ttlPaidAll":"44,378"
+                    },
+                    {  
+                    "rrp" : "35,900",
+                    "rc":699,
+                    "ttlPaid":"34,090",
+                    "ttlPaidAll":"41,478"
+                    },
+                    {
+                    "rrp" : "35,900",
+                    "rc":"1,099",
+                    "ttlPaid":"33,590",
+                    "ttlPaidAll":"44,778"
+                    }
+                ]
+            },
+            {
+                
+                "model":"64GB",
+                "choice":[
+                    {  
+                    "rrp" : "29,900",
+                    "rc":399,
+                    "ttlPaid":"28,900",
+                    "ttlPaidAll":"33,688"
+                },
+                {
+                    "rrp" : "29,900",
+                    "rc":499,
+                    "ttlPaid":"28,400",
+                    "ttlPaidAll":"34,388"
+                },
+                {
+                    "rrp" : "29,900",
+                    "rc":649,
+                    "ttlPaid":"27,900",
+                    "ttlPaidAll":"35,688"
+                    },
+                    {  
+                    "rrp" : "26,700",
+                    "rc":699,
+                    "ttlPaid":"23,900",
+                    "ttlPaidAll":"32,288"
+                    },
+                    {
+                    "rrp" : "26,700",
+                    "rc":"1,099",
+                    "ttlPaid":"23,400",
+                    "ttlPaidAll":"36,588"
+                    }
+                ]
+            }
+        ]
+    }
+]

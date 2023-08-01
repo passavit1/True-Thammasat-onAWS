@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Nav } from "../../components/index";
 import tablet from "../../items/data/tablet.json";
+import promotion from "../../items/data/promotion.json";
 import styled from "styled-components";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -47,7 +48,14 @@ const StyledCardContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  height: 93vh;
+  height: 60vh;
+
+  @media screen and (max-width: 450px) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: auto;
+    align-items: center;
+  }
 `;
 
 const StyledCard = styled.div`
@@ -57,7 +65,12 @@ const StyledCard = styled.div`
   padding: 20px;
   margin: 20px;
   width: 25%;
-  height: 45%;
+  // height: 45%;
+
+  @media screen and (max-width: 450px) {
+    width: 70%;
+    // background-color: blue;
+  }
 `;
 
 const StyledImage = styled.img`
@@ -65,10 +78,40 @@ const StyledImage = styled.img`
   height: 200px;
   border-radius: 8px;
   margin-bottom: 10px;
+
+  @media screen and (max-width: 450px) {
+    scale: 1 !important;
+  }
+`;
+
+const StyledTable = styled.table`
+  width: 90%;
+  border-collapse: collapse;
+  color: red;
+
+  th,
+  td {
+    border: 1px solid #dedbd5;
+    padding: 8px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #dedbd5;
+  }
+`;
+
+const StyledTableContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const Compare = () => {
   const [loadedImages, setLoadedImages] = useState([]);
+  const [selectedStorage, setSelectedStorage] = useState("256GB");
+  const [filteredPromotions, setFilteredPromotions] = useState([]);
+  const [selectedModel, setModel] = useState("Ipad Air5");
 
   useEffect(() => {
     const preloadImages = async () => {
@@ -86,6 +129,24 @@ const Compare = () => {
 
     preloadImages();
   }, []);
+
+  useEffect(() => {
+    setFilteredPromotions([]); // Clear the table data first
+
+    const filteredModel = promotion.find((item) =>
+      item.model.find((m) => m.model === selectedStorage)
+    );
+
+    console.log(filteredModel);
+
+    const promotions =
+      filteredModel?.model.find((m) => m.model === selectedStorage)?.choice ||
+      [];
+
+    console.log(promotions);
+
+    setFilteredPromotions(promotions); // Update this line with the new data
+  }, [selectedStorage]);
 
   return (
     <div>
@@ -113,9 +174,56 @@ const Compare = () => {
             <p>RAM: {model.ram}</p>
             <p>Display: {model.display}</p>
             <p>Camera: {model.camera}</p>
+            <button
+              onClick={() => {
+                setSelectedStorage("256GB");
+                setModel(model.name);
+              }}
+            >
+              256GB
+            </button>
+            <button
+              onClick={() => {
+                setSelectedStorage("64GB");
+                setModel(model.name);
+              }}
+            >
+              64GB
+            </button>
           </StyledCard>
         ))}
       </StyledCardContainer>
+
+      <StyledTableContainer>
+        <StyledTable>
+          <thead>
+            <tr>
+              <th>Model Name</th>
+              <th>RRP</th>
+              <th>RC</th>
+              <th>Total Paid (At that day)</th>
+              <th>Total Paid (All Contract)</th>
+            </tr>
+          </thead>
+          <tbody>
+            {filteredPromotions.length > 0 ? (
+              filteredPromotions.map((choice) => (
+                <tr key={choice.id}>
+                  <td>{selectedModel + " " + selectedStorage}</td>
+                  <td>{choice.rrp}</td>
+                  <td>{choice.rc}</td>
+                  <td>{choice.ttlPaid}</td>
+                  <td>{choice.ttlPaidAll}</td>
+                </tr>
+              ))
+            ) : (
+              <tr>
+                <td colSpan="5">No data available</td>
+              </tr>
+            )}
+          </tbody>
+        </StyledTable>
+      </StyledTableContainer>
     </div>
   );
 };
