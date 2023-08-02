@@ -10,6 +10,7 @@ import {
   Event5,
   Test,
   Compare,
+  LandingPage,
 } from "./Pages/index";
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Index_page />} />
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/index" element={<Index_page />} />
           <Route path="/event1" element={<Event1 />} />
           <Route path="/event2" element={<Event2 />} />
           <Route path="/event3" element={<Event3 />} />

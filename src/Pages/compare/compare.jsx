@@ -10,6 +10,18 @@ import "slick-carousel/slick/slick-theme.css";
 const StyledSlider = styled(Slider)`
   margin-top: 10px;
 
+  animation: tilt-in-right-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  @keyframes tilt-in-right-1 {
+    0% {
+      transform: rotateX(-30deg) translateX(300px) skewX(30deg);
+      opacity: 0;
+    }
+    100% {
+      transform: rotateX(0deg) translateX(0) skewX(0deg);
+      opacity: 1;
+    }
+  }
+
   .slick-slide {
     padding: 10px;
   }

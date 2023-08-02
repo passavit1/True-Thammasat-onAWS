@@ -1,20 +1,25 @@
 import React from "react";
 import styled from "styled-components";
-
 import { Link } from "react-router-dom";
+import logo from "../../items/logoandMonth.svg";
 
 const StyledNav = styled.div`
   width: 100%;
-  height: 7vh;
+  height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   font-family: "TrueThammasat";
+  margin-bottom: -2vh;
 
   .inside {
     font-size: 3rem;
     color: white;
+
+    img {
+      width: 250px;
+    }
   }
 
   .compare {
@@ -40,8 +45,10 @@ const StyledNav = styled.div`
 const Nav = () => {
   return (
     <StyledNav>
-      <Link to="/" style={{ textDecoration: "none" }}>
-        <div className="inside">TRUE @ THAMMASAT</div>
+      <Link to="/index" style={{ textDecoration: "none" }}>
+        <div className="inside">
+          <img src={logo} alt="" srcset="" />
+        </div>
       </Link>
       <Link to="/compare" style={{ textDecoration: "none" }}>
         <div className="compare">compare</div>

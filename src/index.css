@@ -26,3 +26,11 @@ body {
     background-attachment: fixed;
   }
 }
+
+body::-webkit-scrollbar {
+  width: 0em;
+}
+
+body::-webkit-scrollbar:horizontal {
+  height: 0em;
+}

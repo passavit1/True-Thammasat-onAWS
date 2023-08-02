@@ -7,6 +7,7 @@ import Event5 from "./event5/event5.jsx";
 import Test from "./test.jsx";
 import LoadingPage from "./loadingPage/loadingPage.jsx";
 import Compare from "./compare/compare.jsx";
+import LandingPage from "./landingPage/landingPage.jsx";
 
 export {
   Index_page,
@@ -18,4 +19,5 @@ export {
   Test,
   LoadingPage,
   Compare,
+  LandingPage,
 };

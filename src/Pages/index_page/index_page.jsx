@@ -2,31 +2,49 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { Nav } from "../../components/index";
+import logogarena from "../../items/logoGarena.svg";
 
 const StyledContainer = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column;
   cursor: default;
+  color: white;
 
-  .NavContainer {
-    height: 7%;
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+  @keyframes scale-in-center {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  #logogarena {
+    width: 50%;
+    height: 10%;
+    position: absolute;
+    bottom: 6%;
+    left: 27%;
   }
 
   .EventContainer {
     height: 93%;
     padding-bottom: 1%;
     position: relative;
-    padding-top: 5%;
 
     .Date {
       width: 9%;
       height: 6%;
       border-radius: 10px;
-      background-color: #fff;
+      background-color: #3b3b3b;
       position: absolute;
       left: 5%;
-      top: 4%;
+      top: -6%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -46,10 +64,7 @@ const StyledContainer = styled.div`
 `;
 
 const StyledEvent = styled.div`
-  height: 12%;
-  border-radius: 10px;
-  background-color: #dedbd5;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  height: 8%;
   padding: 0.5rem 0;
   margin: 1.5% auto;
   display: flex;
@@ -72,17 +87,21 @@ const StyledEvent = styled.div`
 
   div:first-child {
     width: 10%;
-    background-color: yellow;
+    background-color: #3b3b3b;
+    border-radius: 10px 0 0 10px;
   }
 
   div:nth-child(2) {
+    border-radius: 0 10px 10px 0;
     width: 30%;
-    background-color: grey;
+    background: linear-gradient(to right, rgb(128, 3, 154), rgb(255, 0, 101));
   }
 
   div:last-child {
     width: 60%;
-    background-color: pink;
+    justify-content: flex-start;
+    padding-left: 4%;
+    text-align: left;
   }
 
   @media screen and (max-width: 450px) {
@@ -117,7 +136,6 @@ const Index_page = () => {
       </div>
       <div className="EventContainer">
         <div className="Date">Date</div>
-
         <StyledEvent onClick={() => handleButtonClick("/event1")}>
           <div>5</div>
           <div>Booth งานรับเพื่อนใหม่</div>
@@ -152,6 +170,7 @@ const Index_page = () => {
           </div>
         </StyledEvent>
       </div>
+      <img src={logogarena} alt="" srcset="" id="logogarena" />
     </StyledContainer>
   );
 };
