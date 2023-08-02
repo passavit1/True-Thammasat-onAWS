@@ -83,6 +83,19 @@ const StyledContainer = styled.div`
         width: 18%;
         top: -0.8%;
       }
+
+      .topic {
+        margin: 5% 0;
+
+        hr {
+          width: 40px;
+        }
+
+        p {
+          font-size: 1rem;
+          text-align: center;
+        }
+      }
     }
   }
 `;
@@ -129,8 +142,8 @@ const StyledEvent = styled.div`
   }
 
   @media screen and (max-width: 450px) {
-    height: 15%;
-    margin: 0 auto 1%;
+    height: 60px;
+    margin: 0 auto 3%;
     padding: 0 0 0 0;
 
     div {
@@ -181,7 +194,7 @@ const Index_page = () => {
         </StyledEvent>
         <div className="topic">
           <hr />
-          <p>คอร์สฟรี_Up Skills_สร้างรายได้ </p>
+          <p>คอร์สฟรี Up Skills สร้างรายได้ </p>
           <hr />
         </div>
         <StyledEvent onClick={() => handleButtonClick("/event3")}>

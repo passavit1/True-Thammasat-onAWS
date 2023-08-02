@@ -191,6 +191,47 @@ const StyledContent = styled.div`
         line-height: 1.4rem;
       }
     }
+
+    .star {
+      img {
+        width: 15%;
+      }
+
+      img:first-child {
+        top: 13%;
+        left: 2%;
+      }
+
+      img:nth-child(2) {
+        top: 13%;
+        left: 23%;
+      }
+      img:nth-child(3) {
+        top: 13%;
+        left: 44%;
+      }
+      img:nth-child(4) {
+        top: 13%;
+        left: 65%;
+      }
+      img:nth-child(5) {
+        top: 54.5%;
+        left: 2%;
+      }
+
+      img:nth-child(6) {
+        top: 54.5%;
+        left: 23%;
+      }
+      img:nth-child(7) {
+        top: 54.5%;
+        left: 44%;
+      }
+      img:nth-child(8) {
+        top: 54.5%;
+        left: 65%;
+      }
+    }
   }
 `;
 

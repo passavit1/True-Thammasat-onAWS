@@ -50,7 +50,7 @@ const StyledContainer = styled.div`
 
       .topic {
         scale: 1.2;
-        top: 20%;
+        top: -5%;
         left: 30%;
       }
 
@@ -143,7 +143,7 @@ const StyledTable = styled.table`
 
       button {
         scale: 0.7;
-        top: 48%;
+        top: 28%;
         left: 67%;
       }
     }

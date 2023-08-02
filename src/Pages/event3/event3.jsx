@@ -38,9 +38,9 @@ const StyledContainer = styled.div`
           rgb(128, 3, 154),
           rgb(255, 0, 101)
         );
+        height: 28px;
         padding: 0.5%;
         font-weight: 700;
-        height: 28px;
         width: 400px;
         display: flex;
         justify-content: center;
@@ -124,6 +124,115 @@ const StyledContainer = styled.div`
 
           .logo {
             margin-left: -30%;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .container {
+      height: 150vh;
+
+      .head {
+        height: 40px;
+
+        p {
+          width: 80%;
+        }
+      }
+
+      .main {
+        flex-direction: column;
+        align-items: center;
+
+        .left {
+          display: flex;
+          width: 100%;
+          align-items: center;
+
+          img {
+            width: 300px;
+            height: 400px;
+            position: static;
+            margin: 5% auto;
+          }
+        }
+
+        .right {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .header {
+            text-align: center;
+            padding: 0;
+            background: linear-gradient(
+              to right,
+              rgb(128, 3, 154),
+              rgb(255, 0, 101)
+            );
+            height: 40px;
+            font-weight: 700;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            border-radius: 20px;
+            color: white;
+            margin-top: 1%;
+          }
+
+          .center {
+            flex-direction: column;
+            justify-content: center;
+            margin: 5% auto;
+
+            .centerLeft {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+
+              img {
+                margin: 0;
+                width: 70%;
+              }
+            }
+
+            .centerRight {
+              width: 100%;
+              align-items: center;
+
+              img {
+                width: 70%;
+                margin: 10px auto;
+              }
+            }
+          }
+
+          .contract {
+            flex-direction: column;
+            align-items: center;
+            margin: 10px auto;
+
+            .button {
+              img {
+                width: 230px;
+                height: 230px;
+                margin-top: -70px;
+              }
+            }
+
+            .logo {
+              margin: 0;
+              img {
+                width: 230px;
+                height: 230px;
+                margin-top: -130px;
+              }
+            }
           }
         }
       }
