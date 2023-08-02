@@ -1,13 +1,17 @@
 import React from "react";
 import { Nav } from "../../components/index";
 import styled from "styled-components";
+import star1 from "../../items/(Cleaning Logo)/1.svg";
+import star2 from "../../items/(Cleaning Logo)/2.svg";
+import star3 from "../../items/(Cleaning Logo)/3.svg";
+import star4 from "../../items/(Cleaning Logo)/4.svg";
 
 const StyledContent = styled.div`
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 93vh;
+  height: 80vh;
 
   animation: tilt-in-right-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   @keyframes tilt-in-right-1 {
@@ -103,6 +107,91 @@ const StyledContent = styled.div`
       text-align: center;
     }
   }
+
+  .star {
+    img {
+      position: absolute;
+      width: 100px;
+    }
+
+    img:first-child {
+      top: 27%;
+      left: 18.5%;
+    }
+
+    img:nth-child(2) {
+      top: 27%;
+      left: 33%;
+    }
+    img:nth-child(3) {
+      top: 27%;
+      left: 48%;
+    }
+    img:nth-child(4) {
+      top: 27%;
+      left: 62.5%;
+    }
+    img:nth-child(5) {
+      top: 68.5%;
+      left: 18.5%;
+    }
+
+    img:nth-child(6) {
+      top: 68.5%;
+      left: 33%;
+    }
+    img:nth-child(7) {
+      top: 68.5%;
+      left: 48%;
+    }
+    img:nth-child(8) {
+      top: 68.5%;
+      left: 62.5%;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    margin-top: 20%;
+    height: 70vh;
+
+    .header {
+      h1 {
+        scale: 0.7;
+        left: 5%;
+        top: -70px;
+      }
+
+      div {
+        width: 50%;
+        height: 40px;
+        top: -45px;
+        left: 25%;
+      }
+    }
+
+    .topic {
+      hr {
+        width: 80px;
+        margin: 0 -10px;
+      }
+
+      p {
+        scale: 0.7;
+      }
+    }
+
+    .promotion {
+      scale: 0.9;
+
+      p {
+        font-size: 0.9rem;
+        height: 90px;
+        width: 14%;
+        font-weight: 450;
+        line-height: 1.4rem;
+      }
+    }
+  }
 `;
 
 const Event2 = () => {
@@ -135,6 +224,16 @@ const Event2 = () => {
           <p>ส่วนลดค่าติดตั้ง 100-</p>
           <p>item สุดพิเศษจาก การีนา</p>
           <p>online course มูลค่า 1,000-</p>
+        </div>
+        <div className="star">
+          <img src={star1} alt="" srcset="" />
+          <img src={star2} alt="" srcset="" />
+          <img src={star3} alt="" srcset="" />
+          <img src={star4} alt="" srcset="" />
+          <img src={star1} alt="" srcset="" />
+          <img src={star2} alt="" srcset="" />
+          <img src={star3} alt="" srcset="" />
+          <img src={star4} alt="" srcset="" />
         </div>
       </StyledContent>
     </div>

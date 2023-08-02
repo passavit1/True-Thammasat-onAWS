@@ -33,6 +33,16 @@ const StyledLogo = styled.div`
   &:hover img {
     transform: scale(2);
   }
+
+  @media screen and (max-width: 450px) {
+    img {
+      transform: scale(0.6);
+    }
+
+    &:hover img {
+      transform: scale(0.8);
+    }
+  }
 `;
 
 const LandingPage = () => {

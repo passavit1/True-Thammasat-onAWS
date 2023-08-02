@@ -117,6 +117,10 @@ const StyledTableContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 450px) {
+    margin-bottom: 10%;
+  }
 `;
 
 const Compare = () => {

@@ -39,6 +39,12 @@ const StyledNav = styled.div`
       font-size: 1.5rem;
       top: 30%;
     }
+
+    .inside {
+      img {
+        width: 200px;
+      }
+    }
   }
 `;
 
@@ -50,9 +56,9 @@ const Nav = () => {
           <img src={logo} alt="" srcset="" />
         </div>
       </Link>
-      <Link to="/compare" style={{ textDecoration: "none" }}>
+      {/* <Link to="/compare" style={{ textDecoration: "none" }}>
         <div className="compare">compare</div>
-      </Link>
+      </Link> */}
     </StyledNav>
   );
 };

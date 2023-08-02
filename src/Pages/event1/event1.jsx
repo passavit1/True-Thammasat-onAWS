@@ -16,6 +16,18 @@ const StyledContainer = styled.div`
     flex-direction: column;
     margin-top: -3vh;
 
+    animation: tilt-in-right-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    @keyframes tilt-in-right-1 {
+      0% {
+        transform: rotateX(-30deg) translateX(300px) skewX(30deg);
+        opacity: 0;
+      }
+      100% {
+        transform: rotateX(0deg) translateX(0) skewX(0deg);
+        opacity: 1;
+      }
+    }
+
     .topic {
       position: absolute;
       background: linear-gradient(to right, rgb(128, 3, 154), rgb(255, 0, 101));
@@ -32,15 +44,23 @@ const StyledContainer = styled.div`
     }
   }
 
-  animation: tilt-in-right-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  @keyframes tilt-in-right-1 {
-    0% {
-      transform: rotateX(-30deg) translateX(300px) skewX(30deg);
-      opacity: 0;
-    }
-    100% {
-      transform: rotateX(0deg) translateX(0) skewX(0deg);
-      opacity: 1;
+  @media screen and (max-width: 450px) {
+    .content {
+      margin-top: 7vh;
+
+      .topic {
+        scale: 1.2;
+        top: 20%;
+        left: 30%;
+      }
+
+      h1 {
+        font-size: 1.1rem;
+        text-align: center;
+        margin: 3% auto;
+        width: 110%;
+        margin-left: -5%;
+      }
     }
   }
 `;
@@ -106,6 +126,26 @@ const StyledTable = styled.table`
     button:hover {
       background-color: green;
       transition: 0.5s ease-in-out;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 0.8rem;
+    font-weight: 500;
+    width: 95%;
+
+    tbody tr {
+      height: 80px;
+
+      td {
+        text-align: center;
+      }
+
+      button {
+        scale: 0.7;
+        top: 48%;
+        left: 67%;
+      }
     }
   }
 `;

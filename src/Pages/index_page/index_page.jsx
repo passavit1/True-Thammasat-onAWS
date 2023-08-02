@@ -11,19 +11,6 @@ const StyledContainer = styled.div`
   cursor: default;
   color: white;
 
-  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-
-  @keyframes scale-in-center {
-    0% {
-      transform: scale(0);
-      opacity: 1;
-    }
-    100% {
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
-
   #logogarena {
     width: 50%;
     height: 10%;
@@ -37,6 +24,19 @@ const StyledContainer = styled.div`
     padding-bottom: 1%;
     position: relative;
 
+    animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+
+    @keyframes scale-in-center {
+      0% {
+        transform: scale(0);
+        opacity: 1;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
     .Date {
       width: 9%;
       height: 6%;
@@ -49,15 +49,39 @@ const StyledContainer = styled.div`
       justify-content: center;
       align-items: center;
     }
+
+    .topic {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      hr {
+        width: 600px;
+        margin: 0 20px;
+        border: none;
+        border-top: 0.5px solid white;
+      }
+
+      p {
+        font-weight: 600;
+        font-size: 1.5rem;
+      }
+    }
   }
 
   @media screen and (max-width: 450px) {
+    #logogarena {
+      width: 90%;
+      left: 5%;
+      bottom: 2.5%;
+    }
+
     .EventContainer {
-      padding-top: 20%;
+      padding-top: 8%;
 
       .Date {
-        background-color: green;
         width: 18%;
+        top: -0.8%;
       }
     }
   }
@@ -106,6 +130,13 @@ const StyledEvent = styled.div`
 
   @media screen and (max-width: 450px) {
     height: 15%;
+    margin: 0 auto 1%;
+    padding: 0 0 0 0;
+
+    div {
+      font-size: 0.8rem;
+      height: 70%;
+    }
 
     div:first-child {
       width: 20%;
@@ -117,7 +148,7 @@ const StyledEvent = styled.div`
 
     div:last-child {
       width: 50%;
-      font-size: 0.8rem;
+      font-size: 0.7rem;
     }
   }
 `;
@@ -148,6 +179,11 @@ const Index_page = () => {
             Sales! คุ้มกว่า การันตี!! พร้อมของแถมสุดพิเศษมูลค่ารวม xx บาท
           </div>
         </StyledEvent>
+        <div className="topic">
+          <hr />
+          <p>คอร์สฟรี_Up Skills_สร้างรายได้ </p>
+          <hr />
+        </div>
         <StyledEvent onClick={() => handleButtonClick("/event3")}>
           <div>7 , 14 , 16 </div>
           <div>สายมู</div>
