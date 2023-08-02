@@ -1,5 +1,4 @@
 [
-
     {   
         "id":1,
         "name":"ipad-air5",
@@ -72,6 +71,114 @@
                     "rc":"1,099",
                     "ttlPaid":"23,400",
                     "ttlPaidAll":"36,588"
+                    }
+                ]
+            }
+        ]
+    },
+    {   
+        "id":2,
+        "name":"ipad-gen10",
+        "model":[
+            {
+                "model":"256GB",
+                "choice":
+                [
+                    {  
+                    "rrp" : "29,100",
+                    "rc":699,
+                    "ttlPaid":"26,600",
+                    "ttlPaidAll":"34,988"
+                },
+                {
+                    "rrp" : "29,100",
+                    "rc":"1,099",
+                    "ttlPaid":"25,100",
+                    "ttlPaidAll":"38,288"
+                }
+                ]
+            },
+            {
+                
+                "model":"64GB",
+                "choice":[
+                    {  
+                    "rrp" : "23,100",
+                    "rc":699,
+                    "ttlPaid":"20,600",
+                    "ttlPaidAll":"28,988"
+                },
+                {
+                    "rrp" : "23,100",
+                    "rc":"1,099",
+                    "ttlPaid":"19,100",
+                    "ttlPaidAll":"32,288"
+                }
+                ]
+            }
+        ]
+    },
+    {   
+        "id":3,
+        "name":"ipad-gen9",
+        "model":[
+            {
+                "model":"256GB",
+                "choice":[
+                {  
+                    "rrp" : "24,000",
+                    "rc":250,
+                    "ttlPaid":"23,900",
+                    "ttlPaidAll":"26,900"
+                },
+                {
+                    "rrp" : "24,000",
+                    "rc":450,
+                    "ttlPaid":"22,900",
+                    "ttlPaidAll":"28,300"
+                },
+                {
+                    "rrp" : "22,200",
+                    "rc":699,
+                    "ttlPaid":"19,300",
+                    "ttlPaidAll":"27,688"
+                },
+                {  
+                    "rrp" : "22,200",
+                    "rc":"1,099",
+                    "ttlPaid":"19,800",
+                    "ttlPaidAll":"32,988"
+                }
+                ]
+            },
+            {
+                
+                "model":"64GB",
+                "choice":
+                [
+                    {  
+                        "rrp" : "18,400",
+                        "rc":250,
+                        "ttlPaid":"17,900",
+                        "ttlPaidAll":"20,900"
+                    },
+                    {
+                        "rrp" : "18,400",
+                        "rc":450,
+                        "ttlPaid":"16,900",
+                        "ttlPaidAll":"17,380"
+                    },
+                    {
+                        "rrp" : "18,400",
+                        "rc":699,
+                        "ttlPaid":"13,800",
+                        "ttlPaidAll":"22,188"
+                    },
+                    {  
+                        "rrp" : "18.400",
+                        "rc":"1,099",
+                        "ttlPaid":"13,800",
+                        "ttlPaidAll":"26.988"
                     }
                 ]
             }

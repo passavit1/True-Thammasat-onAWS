@@ -111,7 +111,7 @@ const Compare = () => {
   const [loadedImages, setLoadedImages] = useState([]);
   const [selectedStorage, setSelectedStorage] = useState("256GB");
   const [filteredPromotions, setFilteredPromotions] = useState([]);
-  const [selectedModel, setModel] = useState("Ipad Air5");
+  const [selectedModel, setModel] = useState("ipad-air5");
 
   useEffect(() => {
     const preloadImages = async () => {
@@ -131,11 +131,9 @@ const Compare = () => {
   }, []);
 
   useEffect(() => {
-    setFilteredPromotions([]); // Clear the table data first
+    setFilteredPromotions([]);
 
-    const filteredModel = promotion.find((item) =>
-      item.model.find((m) => m.model === selectedStorage)
-    );
+    const filteredModel = promotion.find((item) => item.name === selectedModel);
 
     console.log(filteredModel);
 
@@ -145,8 +143,8 @@ const Compare = () => {
 
     console.log(promotions);
 
-    setFilteredPromotions(promotions); // Update this line with the new data
-  }, [selectedStorage]);
+    setFilteredPromotions(promotions);
+  }, [selectedModel, selectedStorage]);
 
   return (
     <div>
