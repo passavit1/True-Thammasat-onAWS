@@ -456,6 +456,93 @@ const StyledContainer = styled.div`
       }
     }
   }
+
+  @media screen and (min-width: 1920px) and (min-height: 1080px) {
+    .container {
+      .head {
+        height: 40px;
+        margin-top : 1%;
+
+        p {
+          width: 60%;
+          font-size:1.7rem;
+        }
+      }
+
+      .main {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 0%;        
+
+        .left {
+          img {
+            width: 500px;
+            height: 650px;
+            margin: 0 auto auto 35% ;
+          }
+        }
+
+        .right {
+          
+          .header {
+            width: 450px;
+            margin-top: 2%;
+            margin-left: -20%;
+            font-size:1.5rem;
+          }
+
+          .center {
+            margin: 0 auto 0;
+
+            .centerLeft {
+              height:500px;
+              width : 650px;
+
+              img {
+                margin: 0 -50px 0 0;
+                scale:1;
+              }
+            }
+
+            .centerRight {
+              
+              img {
+                height: 235px;
+                width : 350px;
+                margin: 10px auto;
+              }
+            }
+          }
+
+          .contract {
+            flex-direction: row;
+            align-items: center;
+            margin: 0 0 0 -100px;
+
+            .button {
+              margin-right: 220px;
+              img {
+                width: 250px;
+                height: 100px;
+                margin-top: 0px;
+              }
+            }
+
+            .logo {
+              margin: 0;
+              
+              img {
+                width: 250px;
+                height: 150px;
+                margin-top: 0px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
 `;
 
 const Event3 = () => {

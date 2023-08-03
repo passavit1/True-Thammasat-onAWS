@@ -381,6 +381,61 @@ const StyledContent = styled.div`
     }
   }
 
+
+
+  @media screen and (min-width: 1020px) and (min-height: 1366px) {
+    margin-bottom:13%;
+
+    .header {
+      margin-bottom : 4%;
+      h1 {
+        scale: 1;
+        left: 28%;
+        top: -100px;
+        width: 40%;
+        font-size:2rem;
+        height: 50px;
+        margin-bottom:20px;
+      }
+
+      div {
+        width: 35%;
+        height: 50px;
+        top: -80px;
+        left: 32%;
+        font-size:2rem;
+      }
+    }
+
+    .topic {
+      margin-bottom:5%;
+      hr {
+        width: 240px;
+        margin: 0 20px;
+      }
+
+      p {
+        scale: 1.1;
+      }
+    }
+
+    .promotion {
+      margin-bottom:10%;
+      p {
+
+        font-size:1.5rem;
+        line-height:1.8rem;
+
+        img {
+          scale: 0.2;
+          left: -140%;
+          bottom: -105%;
+        }
+      }
+    }   
+  }
+
+
   @media screen and (min-width: 1270px) and (min-height: 740px) {
     margin-top: 0%;
     height: auto;
@@ -438,48 +493,91 @@ const StyledContent = styled.div`
     }
   }
 
-  @media screen and (min-width: 1920px) and (min-height: 1080px) {
+
+
+
+
+
+  @media screen and (min-width: 1450px) and (min-height: 670px) {
+    margin-top : 5%;
+
 
     .header{
-      h1 {
+      h1{
         scale : 1;
+        top: -10px;
       }
 
       div{
-        font-size: 1.3rem;
-        left : 25%;
-        top: -100px;
-      }
-
-    }
-
-    .topic{
-      margin-bottom:20px;
-      hr{
-        width : 550px;
-        margin: 0 60px;
-      }
-
-      p{
-        scale : 1.2
-        
+        left : 35%;
       }
     }
-
     .promotion {
- 
+
       p {
-        font-size: 1.6rem;
 
         img {
           scale: 0.2;
-          left: -80%;
-          z-index: 1;
+          left: -95%;  
           bottom: -105%;
         }
       }
     }
+
+
+    .topic {
+      
+      hr {
+        width: 450px;
+        margin: 0 20px;
+      }
+
+      p {
+        scale: 1.05;
+      }
+    }
   }
+    
+  
+  
+  @media screen and (min-width: 1920px) and (min-height: 1080px) {
+      .header {
+        h1 {
+          scale: 1;
+        }
+
+        div {
+          font-size: 1.3rem;
+          left: 25%;
+          top: -100px;
+        }
+      }
+
+      .topic {
+        margin-bottom: 20px;
+        hr {
+          width: 550px;
+          margin: 0 60px;
+        }
+
+        p {
+          scale: 1.2;
+        }
+      }
+
+      .promotion {
+        p {
+          font-size: 1.6rem;
+
+          img {
+            scale: 0.2;
+            left: -80%;
+            z-index: 1;
+            bottom: -105%;
+          }
+        }
+      }
+    }
   }
 `;
 

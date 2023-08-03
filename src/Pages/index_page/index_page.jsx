@@ -196,6 +196,33 @@ const StyledContainer = styled.div`
     }
   }
 
+  @media screen and (min-width: 1450px) and (min-height: 670px) {
+    .EventContainer {
+      padding-top: 3%;
+      .Date {
+        width: 18%;
+        left: 4.8%;
+        top: 3%;
+        font-size: 1.5rem;
+      }
+
+      .topic {
+        margin: 2% auto;
+        hr {
+          width: 300px;
+        }
+
+        p {
+          font-size: 1.8rem;
+        }
+      }
+    }
+
+    #logogarena {
+      bottom: -50%;
+    }
+  }
+
   @media screen and (min-width: 1920px) and (min-height: 1080px) {
     .EventContainer {
       .Date {
@@ -214,6 +241,9 @@ const StyledContainer = styled.div`
           font-size: 1.8rem;
         }
       }
+    }
+    #logogarena {
+      bottom: -20%;
     }
   }
 `;
@@ -317,6 +347,10 @@ const StyledEvent = styled.div`
 
   @media screen and (min-width: 1280px) and (min-height: 740px) {
     margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1450px) and (min-height: 670px) {
+    height: 80px;
   }
   @media screen and (min-width: 1920px) and (min-height: 1080px) {
     height: 90px;

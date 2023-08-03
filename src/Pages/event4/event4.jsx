@@ -212,6 +212,45 @@ const StyledContainer = styled.div`
       }
     }
   }
+
+  @media screen and (min-width: 1920px) and (min-height: 1080px) {
+    .content {
+      .mainContent {
+        .pic {
+          width: 50%;
+          img {
+            width: 90%;
+            margin-top: -100px;
+          }
+        }
+        .agenda {
+          width: 50%;
+          margin-right: 3%;
+
+          .icon {
+            margin-bottom: 5%;
+          }
+
+          #agenda {
+            width: 80%;
+          }
+
+          #freeItem {
+            width: 50%;
+          }
+        }
+      }
+      .contract {
+        align-items: center;
+        margin-bottom: 0;
+        margin-top: -5%;
+
+        img {
+          width: 60%;
+        }
+      }
+    }
+  }
 `;
 
 const Event4 = () => {
