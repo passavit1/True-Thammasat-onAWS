@@ -22,27 +22,58 @@ const StyledNav = styled.div`
     }
   }
 
-  .compare {
-    color: white;
-    font-size: 3rem;
-    position: absolute;
-    top: 2%;
-    right: 5%;
-  }
-
-  @media screen and (max-width: 450px) {
+  @media screen and (min-width: 320px) {
     .inside {
       font-size: 2rem;
     }
 
-    .compare {
-      font-size: 1.5rem;
-      top: 30%;
+    .inside {
+      img {
+        width: 150px;
+      }
     }
+  }
 
+  @media screen and (min-width: 360px) {
     .inside {
       img {
         width: 200px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 412px) {
+    .inside {
+      img {
+        width: 230px;
+      }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .inside {
+      img {
+        width: 280px;
+      }
+    }
+  }
+  @media screen and (min-width: 834px) {
+    .inside {
+      img {
+        width: 300px;
+      }
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    .inside {
+      img {
+        width: 250px;
+      }
+    }
+  }
+  @media screen and (min-width: 1728px) {
+    .inside {
+      img {
+        width: 350px;
       }
     }
   }
@@ -56,9 +87,6 @@ const Nav = () => {
           <img src={logo} alt="" srcset="" />
         </div>
       </Link>
-      {/* <Link to="/compare" style={{ textDecoration: "none" }}>
-        <div className="compare">compare</div>
-      </Link> */}
     </StyledNav>
   );
 };

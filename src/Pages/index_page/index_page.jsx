@@ -25,7 +25,6 @@ const StyledContainer = styled.div`
     position: relative;
 
     animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-
     @keyframes scale-in-center {
       0% {
         transform: scale(0);
@@ -69,11 +68,11 @@ const StyledContainer = styled.div`
     }
   }
 
-  @media screen and (max-width: 450px) {
+  @media screen and (min-width: 320px) {
     #logogarena {
       width: 90%;
       left: 5%;
-      bottom: 2.5%;
+      bottom: -90px;
     }
 
     .EventContainer {
@@ -92,8 +91,70 @@ const StyledContainer = styled.div`
         }
 
         p {
-          font-size: 1rem;
+          font-size: 0.75rem;
           text-align: center;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 360px) {
+    #logogarena {
+      bottom: 20px;
+    }
+
+    .EventContainer {
+      .topic {
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 412px) {
+    .EventContainer {
+      .topic {
+        hr {
+          width: 60px;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .EventContainer {
+      .topic {
+        hr {
+          width: 160px;
+        }
+
+        p {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1280px) and (min-height: 740px) {
+    .EventContainer {
+      .Date {
+        top: -30px;
+      }
+
+      padding-top: 20px;
+      .topic {
+        margin: 20px;
+        hr {
+          width: 350px;
+        }
+
+        p {
+          font-size: 1.4rem;
         }
       }
     }
@@ -141,7 +202,7 @@ const StyledEvent = styled.div`
     text-align: left;
   }
 
-  @media screen and (max-width: 450px) {
+  @media screen and (min-width: 320px) {
     height: 60px;
     margin: 0 auto 3%;
     padding: 0 0 0 0;
@@ -163,6 +224,38 @@ const StyledEvent = styled.div`
       width: 50%;
       font-size: 0.7rem;
     }
+  }
+
+  @media screen and (min-width: 360px) {
+    margin: 2% auto 3%;
+  }
+
+  @media screen and (min-width: 360px) and (min-height: 710px) {
+    margin: 4% auto;
+  }
+  @media screen and (min-width: 360px) and (min-height: 790px) {
+    margin: 7% auto;
+  }
+
+  @media screen and (min-width: 393px) {
+    margin: 6% auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 2% auto;
+    height: 80px;
+
+    div {
+      font-size: 1.1rem;
+    }
+
+    div:last-child {
+      font-size: 1rem;
+    }
+  }
+
+  @media screen and (min-width: 1280px) and (min-height: 740px) {
+    margin: 0 auto;
   }
 `;
 

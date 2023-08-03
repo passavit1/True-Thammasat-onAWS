@@ -130,7 +130,7 @@ const StyledContainer = styled.div`
     }
   }
 
-  @media screen and (max-width: 450px) {
+  @media screen and (min-width: 320px) {
     .container {
       height: 150vh;
 
@@ -231,6 +231,224 @@ const StyledContainer = styled.div`
                 width: 230px;
                 height: 230px;
                 margin-top: -130px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .container {
+      height: auto;
+
+      .head {
+        height: 40px;
+
+        p {
+          width: 80%;
+        }
+      }
+
+      .main {
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 8%;
+
+        .left {
+          display: flex;
+          width: 100%;
+          align-items: center;
+
+          img {
+            width: 300px;
+            height: 400px;
+            position: static;
+            margin: -20% auto 0;
+          }
+        }
+
+        .right {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .header {
+            text-align: center;
+            padding: 0;
+            background: linear-gradient(
+              to right,
+              rgb(128, 3, 154),
+              rgb(255, 0, 101)
+            );
+            height: 40px;
+            font-weight: 700;
+            width: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.2rem;
+            border-radius: 20px;
+            color: white;
+            margin-top: 1%;
+          }
+
+          .center {
+            flex-direction: row;
+            justify-content: center;
+            margin: 5% auto;
+
+            .centerLeft {
+              width: 100%;
+              display: flex;
+              justify-content: center;
+
+              img {
+                margin: 0;
+                width: 70%;
+              }
+            }
+
+            .centerRight {
+              width: 100%;
+              align-items: center;
+
+              img {
+                width: 70%;
+                margin: 10px auto;
+              }
+            }
+          }
+
+          .contract {
+            flex-direction: row;
+            align-items: center;
+            margin: 10px auto;
+
+            .button {
+              margin-right: 30px;
+              img {
+                width: 150px;
+                height: 150px;
+                margin-top: -50px;
+              }
+            }
+
+            .logo {
+              margin: 0;
+              img {
+                width: 150px;
+                height: 150px;
+                margin-top: -90px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 800px) {
+    .container {
+      .main {
+        .right {
+          .center {
+            .centerLeft {
+              img {
+                width: 90%;
+              }
+            }
+            .centerRight {
+              img {
+                width: 90%;
+              }
+            }
+          }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    
+    .container {
+      .head {
+        height: 40px;
+        margin-top : 0.8%;
+        p {
+          width: 70%;
+        }
+      }
+
+      .main {
+        flex-direction: row;
+        align-items: center;
+        margin-top: 0%;
+        height:75vh !important;
+        
+
+        .left {
+          img {
+            width: 350px;
+            height: 500px;
+            position: static;
+            margin: 0 auto auto 35% ;
+          }
+        }
+
+        .right {
+          
+          
+
+          .header {
+            width: 450px;
+            margin-top: 10%;
+            margin-left: -8%;
+          }
+
+          .center {
+            margin: 0 auto 0;
+
+            .centerLeft {
+              height:410px;
+              width : 450px;
+              img {
+                margin: 0 -50px 0 0;
+                scale:1;
+              }
+            }
+
+            .centerRight {
+              
+              img {
+                height: 190px;
+                width : 250px;
+                margin: 10px auto;
+              }
+            }
+          }
+
+          .contract {
+            flex-direction: row;
+            align-items: center;
+            margin: 0 0 0 -50px;
+
+            .button {
+              margin-right: 120px;
+              img {
+                width: 200px;
+                height: 100px;
+                margin-top: 0px;
+              }
+            }
+
+            .logo {
+              margin: 0;
+              
+              img {
+                width: 200px;
+                height: 100px;
+                margin-top: 0px;
               }
             }
           }

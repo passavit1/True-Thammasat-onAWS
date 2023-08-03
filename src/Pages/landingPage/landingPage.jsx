@@ -34,13 +34,41 @@ const StyledLogo = styled.div`
     transform: scale(2);
   }
 
-  @media screen and (max-width: 450px) {
+  @media screen and (min-width: 320px) {
     img {
       transform: scale(0.6);
     }
 
     &:hover img {
       transform: scale(0.8);
+    }
+  }
+
+  @media screen and (min-width: 428px) {
+    img {
+      transform: scale(0.7);
+    }
+
+    &:hover img {
+      transform: scale(0.9);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    img {
+      transform: scale(0.8);
+    }
+
+    &:hover img {
+      transform: scale(1);
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    img {
+      transform: scale(1);
+    }
+
+    &:hover img {
+      transform: scale(1.2);
     }
   }
 `;
@@ -54,11 +82,11 @@ const LandingPage = () => {
     setTimeout(() => {
       setAnimate(false);
       window.location.href = "/index";
-    }, 800); // Adjust the delay to match the animation duration
+    }, 750); // Adjust the delay to match the animation duration
   };
 
   return (
-    <div>
+    <div style={{ width: "100%" }}>
       <StyledLogo className={animate ? "animate" : ""}>
         <Link to="/index" onClick={handleImageClick}>
           <img src={logo} alt="" />

@@ -33,7 +33,6 @@ const StyledContainer = styled.div`
       background: linear-gradient(to right, rgb(128, 3, 154), rgb(255, 0, 101));
       padding: 0.5%;
       scale: 1.3;
-      top: 15%;
       left: 10%;
     }
 
@@ -44,10 +43,29 @@ const StyledContainer = styled.div`
     }
   }
 
-  @media screen and (max-width: 450px) {
+  @media screen and (min-width: 320px) {
     .content {
       margin-top: 7vh;
+      height: 96vh;
 
+      .topic {
+        scale: 1.2;
+        left: 80px;
+        top: -5%;
+      }
+
+      h1 {
+        font-size: 0.9rem;
+        text-align: center;
+        margin: 15px auto;
+        width: 110%;
+        margin-left: -5%;
+      }
+    }
+  }
+
+  @media screen and (min-width: 360px) {
+    .content {
       .topic {
         scale: 1.2;
         top: -5%;
@@ -55,11 +73,37 @@ const StyledContainer = styled.div`
       }
 
       h1 {
-        font-size: 1.1rem;
-        text-align: center;
-        margin: 3% auto;
-        width: 110%;
-        margin-left: -5%;
+      }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .content {
+      margin-top: 7%;
+      height: auto;
+      .topic {
+        scale: 1.2;
+        top: -5%;
+        left: 5%;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1280px) and (min-height: 740px) {
+    .content {
+      margin-top: 2%;
+
+      .topic {
+        scale: 1.3;
+        top: -5%;
+        left: 5%;
+      }
+
+      h1 {
+        font-size: 1.7rem;
       }
     }
   }
@@ -119,7 +163,7 @@ const StyledTable = styled.table`
       border-radius: 20px;
       font-weight: bold;
       background-color: white;
-      top: 40.1%;
+      top: 27%;
       left: 62.5%;
     }
 
@@ -129,7 +173,7 @@ const StyledTable = styled.table`
     }
   }
 
-  @media screen and (max-width: 450px) {
+  @media screen and (min-width: 320px) {
     font-size: 0.8rem;
     font-weight: 500;
     width: 95%;
@@ -143,8 +187,102 @@ const StyledTable = styled.table`
 
       button {
         scale: 0.7;
-        top: 28%;
-        left: 67%;
+        top: 155px;
+        left: 210px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 360px) {
+    tbody tr {
+      button {
+        scale: 0.7;
+        top: 160px;
+        left: 240px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 375px) {
+    tbody tr {
+      button {
+        scale: 0.7;
+        top: 160px;
+        left: 250px;
+      }
+    }
+  }
+  @media screen and (min-width: 390px) {
+    tbody tr {
+      button {
+        scale: 0.7;
+        top: 160px;
+        left: 265px;
+      }
+    }
+  }
+  @media screen and (min-width: 412px) {
+    tbody tr {
+      button {
+        scale: 0.7;
+        top: 160px;
+        left: 280px;
+      }
+    }
+  }
+  @media screen and (min-width: 428px) {
+    tbody tr {
+      button {
+        scale: 0.7;
+        top: 160px;
+        left: 68.5%;
+      }
+    }
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 1rem;
+
+    tbody tr {
+      td {
+        text-align: left;
+      }
+
+      button {
+        scale: 0.8;
+        top: 160px;
+        left: 68.5%;
+      }
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    font-size: 1.1rem;
+
+    tbody tr {
+      td {
+        text-align: left;
+      }
+
+      button {
+        scale: 1;
+        top: 24%;
+        left: 68.5%;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1280px) and (min-height: 740px) {
+    font-size: 1.2rem;
+
+    tbody tr {
+      td {
+        text-align: left;
+      }
+
+      button {
+        scale: 1;
+        top: 25%;
+        left: 67.5%;
       }
     }
   }
@@ -185,7 +323,7 @@ const Event1 = () => {
             <tr>
               <td>2</td>
               <td id="special">item B พิเศษ จาก Garena Freefire</td>
-              <td>Log in Game Free Fire</td>
+              <td id="special2">Log in Game Free Fire</td>
             </tr>
             <tr>
               <td>3</td>
@@ -218,7 +356,7 @@ const Event1 = () => {
             <tr>
               <td>6</td>
               <td>True Course</td>
-              <td>Free Workshop!! UpSkill สร้างรายได้ ตั้งแต่วัยเรีียน</td>
+              <td>Free Workshop!! UpSkill สร้างรายได้ ตั้งแต่วัยเรียน</td>
               <td>register ได้ก่อนใคร</td>
             </tr>
           </tbody>
