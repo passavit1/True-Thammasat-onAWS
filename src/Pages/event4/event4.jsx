@@ -125,6 +125,36 @@ const StyledContainer = styled.div`
     }
   }
 
+  @media screen and (min-width: 600px) {
+    .content {
+      .mainContent {
+        flex-direction: row;
+        .pic {
+          margin: auto auto;
+          img {
+            width: 95%;
+            margin-top: -10%;
+          }
+        }
+        .agenda {
+          margin-top: 2%;
+          #agenda {
+            width: 95%;
+          }
+          #freeItem {
+            width: 60%;
+          }
+        }
+      }
+      .contract {
+        align-items: center;
+
+        img {
+          width: 80%;
+        }
+      }
+    }
+  }
   @media screen and (min-width: 768px) {
     .content {
       .mainContent {

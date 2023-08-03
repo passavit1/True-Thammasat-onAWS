@@ -6,6 +6,7 @@ import v1 from "../../items/contentCreater/v1.svg";
 import v2 from "../../items/contentCreater/v2.svg";
 import v3 from "../../items/contentCreater/v3.svg";
 import v4 from "../../items/contentCreater/v4.svg";
+import search from "../../items/contentCreater/search.svg";
 
 const StyledContainer = styled.div`
   .container {
@@ -32,10 +33,15 @@ const StyledContainer = styled.div`
         background-color: rgb(17, 17, 17);
 
         .search {
+          display: flex;
+          justify-content: center;
+          img {
+            width: 90%;
+            margin: 4% auto;
+          }
         }
 
         .poster {
-          margin-top: 5%;
           img {
             width: 100%;
           }
@@ -198,15 +204,14 @@ const Event5 = () => {
       <div className="container">
         <div className="main">
           <div className="search">
-            <p>Welcome, Thammasat 89 </p>
-            <input type="text" />
+            <img src={search} alt=".loading." srcset="" />
           </div>
           <div className="poster">
-            <img src={banner} alt="" srcset="" />
+            <img src={banner} alt=".loading." srcset="" />
           </div>
           <div className="video">
             <div className="v1">
-              <img src={v1} alt="" />
+              <img src={v1} alt=".loading." />
               <div className="time">10.00 a.m.</div>
               <div className="description">
                 Join and Why to be an influencer and Creator with TrueID
@@ -214,19 +219,19 @@ const Event5 = () => {
               </div>
             </div>
             <div className="v2">
-              <img src={v2} alt="" />
+              <img src={v2} alt=".loading." />
               <div className="time">10.15 a.m.</div>
               <div className="description">
                 How to create Articles and Videos on the platform.
               </div>
             </div>
             <div className="v3">
-              <img src={v3} alt="" />
+              <img src={v3} alt=".loading." />
               <div className="time">10.45 a.m.</div>
               <div className="description">Basic of SEO</div>
             </div>
             <div className="v4">
-              <img src={v4} alt="" />
+              <img src={v4} alt=".loading." />
               <div className="time">11.20 a.m.</div>
               <div className="description">
                 Grouping with TrueID Creator. Rewards: Exclusive for Attendees

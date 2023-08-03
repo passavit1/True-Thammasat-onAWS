@@ -264,8 +264,73 @@ const StyledContent = styled.div`
       }
     }
   }
+  @media screen and (min-width: 600px) and (min-height: 800px) {
+    .promotion {
+      p {
+        img {
+          scale: 0.15;
+          left: -205%;
+          z-index: 1;
+          bottom: -105%;
+        }
+      }
+    }
+  }
   @media screen and (min-width: 760px) and (min-height: 930px) {
     margin-top: 15%;
+    height: auto;
+
+    .header {
+      h1 {
+        scale: 0.8;
+        left: 8%;
+        top: -70px;
+      }
+
+      div {
+        width: 12%;
+        height: 70px;
+        top: -120px;
+        left: 55%;
+      }
+    }
+
+    .topic {
+      margin-bottom: 3%;
+      hr {
+        width: 180px;
+        margin: 0 20px;
+      }
+
+      p {
+        scale: 1.05;
+      }
+    }
+
+    .promotion {
+      scale: 1.1;
+      margin-bottom: 6%;
+
+      p {
+        font-size: 1.1rem;
+        height: 90px;
+        width: 14%;
+        font-weight: 450;
+        line-height: 1.4rem;
+
+        img {
+          scale: 0.15;
+          left: -175%;
+          z-index: 1;
+          bottom: -105%;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 800px) and (min-height: 600px) {
+    margin-top: 15%;
+
     height: auto;
 
     .header {
@@ -372,6 +437,50 @@ const StyledContent = styled.div`
       }
     }
   }
+
+  @media screen and (min-width: 1920px) and (min-height: 1080px) {
+
+    .header{
+      h1 {
+        scale : 1;
+      }
+
+      div{
+        font-size: 1.3rem;
+        left : 25%;
+        top: -100px;
+      }
+
+    }
+
+    .topic{
+      margin-bottom:20px;
+      hr{
+        width : 550px;
+        margin: 0 60px;
+      }
+
+      p{
+        scale : 1.2
+        
+      }
+    }
+
+    .promotion {
+ 
+      p {
+        font-size: 1.6rem;
+
+        img {
+          scale: 0.2;
+          left: -80%;
+          z-index: 1;
+          bottom: -105%;
+        }
+      }
+    }
+  }
+  }
 `;
 
 const Event2 = () => {
@@ -395,7 +504,7 @@ const Event2 = () => {
           </p>
           <p>
             <img src={star2} alt="" srcset="" />
-            ส่วนลดค่ารายเดือน 25%
+            Shared Plan ได้ 2 ซิม
           </p>
           <p>
             item สุดพิเศษจาก การีนา

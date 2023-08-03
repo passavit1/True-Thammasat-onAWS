@@ -5,7 +5,6 @@ import Event3 from "./event3/event3.jsx";
 import Event4 from "./event4/event4.jsx";
 import Event5 from "./event5/event5.jsx";
 import Test from "./test.jsx";
-import LoadingPage from "./loadingPage/loadingPage.jsx";
 
 import LandingPage from "./landingPage/landingPage.jsx";
 
@@ -17,6 +16,5 @@ export {
   Event4,
   Event5,
   Test,
-  LoadingPage,
   LandingPage,
 };

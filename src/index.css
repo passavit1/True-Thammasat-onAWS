@@ -19,7 +19,7 @@ body {
   background-image: url("./items/BG.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: auto;
 
   @media screen and (max-width: 450px) {
     height: auto;

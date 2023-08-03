@@ -72,7 +72,7 @@ const StyledContainer = styled.div`
     #logogarena {
       width: 90%;
       left: 5%;
-      bottom: -90px;
+      bottom: -20px;
     }
 
     .EventContainer {
@@ -100,7 +100,7 @@ const StyledContainer = styled.div`
 
   @media screen and (min-width: 360px) {
     #logogarena {
-      bottom: 20px;
+      margin-bottom: -4%;
     }
 
     .EventContainer {
@@ -109,6 +109,17 @@ const StyledContainer = styled.div`
           font-size: 0.9rem;
         }
       }
+    }
+  }
+  @media screen and (min-width: 360px) and (min-height: 740px) {
+    #logogarena {
+      margin-bottom: 20%;
+    }
+  }
+
+  @media screen and (min-width: 375px) and (min-height: 660px) {
+    #logogarena {
+      margin-bottom: 13%;
     }
   }
 
@@ -126,7 +137,16 @@ const StyledContainer = styled.div`
     }
   }
 
+  @media screen and (min-width: 600px) and (min-height: 800px) {
+    #logogarena {
+      bottom: -10%;
+    }
+  }
+
   @media screen and (min-width: 768px) {
+    #logogarena {
+      bottom: -0%;
+    }
     .EventContainer {
       .topic {
         hr {
@@ -137,6 +157,16 @@ const StyledContainer = styled.div`
           font-size: 1.4rem;
         }
       }
+    }
+  }
+  @media screen and (min-width: 768px) and (min-height: 980px) {
+    #logogarena {
+      bottom: -5%;
+    }
+  }
+  @media screen and (min-width: 800px) and (min-height: 1240px) {
+    #logogarena {
+      bottom: 0%;
     }
   }
 
@@ -155,6 +185,33 @@ const StyledContainer = styled.div`
 
         p {
           font-size: 1.4rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1280px) and (min-height: 790px) {
+    #logogarena {
+      bottom: -15%;
+    }
+  }
+
+  @media screen and (min-width: 1920px) and (min-height: 1080px) {
+    .EventContainer {
+      .Date {
+        width: 18%;
+        left: 4.8%;
+        top: -5%;
+        font-size: 1.5rem;
+      }
+
+      .topic {
+        hr {
+          width: 600px;
+        }
+
+        p {
+          font-size: 1.8rem;
         }
       }
     }
@@ -254,8 +311,34 @@ const StyledEvent = styled.div`
     }
   }
 
+  @media screen and (min-width: 800px) and (min-height: 1240px) {
+    margin: 5% auto;
+  }
+
   @media screen and (min-width: 1280px) and (min-height: 740px) {
     margin: 0 auto;
+  }
+  @media screen and (min-width: 1920px) and (min-height: 1080px) {
+    height: 90px;
+    margin-bottom: 1.5%;
+
+    div {
+      font-size: 1.5rem;
+      height: 70%;
+    }
+
+    div:first-child {
+      width: 20%;
+    }
+
+    div:nth-child(2) {
+      width: 30%;
+    }
+
+    div:last-child {
+      width: 50%;
+      font-size: 1.3rem;
+    }
   }
 `;
 
