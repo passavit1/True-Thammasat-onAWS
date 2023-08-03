@@ -137,6 +137,12 @@ const StyledContainer = styled.div`
     }
   }
 
+  @media screen and (min-width: 430px) and (min-height: 900px) {
+    #logogarena {
+      margin-bottom: 5%;
+    }
+  }
+
   @media screen and (min-width: 600px) and (min-height: 800px) {
     #logogarena {
       bottom: -10%;
