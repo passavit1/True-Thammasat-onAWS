@@ -1,16 +1,14 @@
 import React from "react";
 import { Nav } from "../../components/index";
 import styled from "styled-components";
-import side1 from "../../items/contentCreater/side1.svg";
-import side2 from "../../items/contentCreater/side2.svg";
-import side3 from "../../items/contentCreater/side3.svg";
-import search from "../../items/contentCreater/search.svg";
+import banner from "../../items/contentCreater/banner.svg";
+import v1 from "../../items/contentCreater/v1.svg";
+import v2 from "../../items/contentCreater/v2.svg";
+import v3 from "../../items/contentCreater/v3.svg";
+import v4 from "../../items/contentCreater/v4.svg";
 
 const StyledContainer = styled.div`
   .container {
-    height: 82vh;
-    display: flex;
-
     animation: tilt-in-right-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     @keyframes tilt-in-right-1 {
       0% {
@@ -22,40 +20,172 @@ const StyledContainer = styled.div`
         opacity: 1;
       }
     }
+  }
 
-    .sidebar {
-      height: 100%;
-      width: 16%;
-      background-color: rgb(55, 47, 42);
+  @media screen and (min-width: 320px) {
+    .container {
+      height: auto;
       display: flex;
-      flex-direction: column;
-      align-items: center;
+      .main {
+        height: 100%;
+        width: 100%;
+        background-color: rgb(17, 17, 17);
 
-      img {
-        width: 70%;
-      }
+        .search {
+        }
 
-      img:first-child {
-        margin-bottom: 10%;
-        margin-top: 10%;
-      }
+        .poster {
+          margin-top: 5%;
+          img {
+            width: 100%;
+          }
+        }
 
-      img:nth-child(2) {
-        margin-bottom: 10%;
+        .video {
+          width: 100%;
+          color: white;
+
+          div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 5%;
+
+            img {
+              width: 70%;
+              margin-bottom: 10%;
+            }
+
+            .time {
+              margin-bottom: 10%;
+              background-color: rgb(59, 59, 59);
+              width: 35%;
+              height: 40px;
+              border-radius: 20px;
+            }
+
+            .description {
+              width: 80%;
+              text-align: center;
+              font-weight: 600;
+            }
+          }
+        }
       }
     }
+  }
 
-    .main {
-      height: 100%;
-      width: 84%;
-      background-color: rgb(17, 17, 17);
+  @media screen and (min-width: 768px) {
+    .container {
+      .main {
+        .video {
+          display: flex;
+          margin-bottom: 6%;
 
-      .search {
-        height: 10%;
+          div {
+            width: 25%;
+            height: 100%;
+
+            img {
+              width: 85%;
+              height: 60%;
+              margin-bottom: 15%;
+            }
+
+            .time {
+              width: 60%;
+              height: 10%;
+              margin-bottom: 15%;
+            }
+
+            .description {
+              height: 20%;
+            }
+          }
+        }
       }
+    }
+  }
 
-      .poster {
-        height: ;
+  @media screen and (min-height: 1090px) {
+    .container {
+      .main {
+        .poster {
+          margin-bottom: 2%;
+        }
+        .video {
+          margin-bottom: 9%;
+
+          div {
+            img {
+              width: 85%;
+              height: 60%;
+              margin-bottom: 30%;
+            }
+
+            .time {
+              width: 60%;
+              height: 40px;
+              margin-bottom: 25%;
+              font-weight: 600;
+            }
+
+            .description {
+              height: 20%;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-height: 1190px) {
+    .container {
+      .main {
+        .video {
+          margin-bottom: 15.2%;
+
+          div {
+            img {
+              margin-bottom: 40%;
+            }
+
+            .time {
+              margin-bottom: 35%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    .container {
+      .main {
+        .video {
+          margin-bottom: 0%;
+
+          div {
+            img {
+              width: 85%;
+              height: 60%;
+              margin-bottom: 15%;
+            }
+
+            .time {
+              width: 60%;
+              height: 40px;
+              margin-bottom: 15%;
+              font-weight: 600;
+              font-size: 1.5rem;
+            }
+
+            .description {
+              height: 20%;
+              font-size: 1.4rem;
+            }
+          }
+        }
       }
     }
   }
@@ -66,17 +196,43 @@ const Event5 = () => {
     <StyledContainer>
       <Nav />
       <div className="container">
-        <div className="sidebar">
-          <img src={side1} alt="" srcset="" />
-          <img src={side2} alt="" srcset="" />
-          <img src={side3} alt="" srcset="" />
-        </div>
         <div className="main">
           <div className="search">
-            <img src={search} alt="" srcset="" />
+            <p>Welcome, Thammasat 89 </p>
+            <input type="text" />
           </div>
-          <div className="poster"></div>
-          <div className="video"></div>
+          <div className="poster">
+            <img src={banner} alt="" srcset="" />
+          </div>
+          <div className="video">
+            <div className="v1">
+              <img src={v1} alt="" />
+              <div className="time">10.00 a.m.</div>
+              <div className="description">
+                Join and Why to be an influencer and Creator with TrueID
+                Creator?
+              </div>
+            </div>
+            <div className="v2">
+              <img src={v2} alt="" />
+              <div className="time">10.15 a.m.</div>
+              <div className="description">
+                How to create Articles and Videos on the platform.
+              </div>
+            </div>
+            <div className="v3">
+              <img src={v3} alt="" />
+              <div className="time">10.45 a.m.</div>
+              <div className="description">Basic of SEO</div>
+            </div>
+            <div className="v4">
+              <img src={v4} alt="" />
+              <div className="time">11.20 a.m.</div>
+              <div className="description">
+                Grouping with TrueID Creator. Rewards: Exclusive for Attendees
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </StyledContainer>

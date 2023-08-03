@@ -94,6 +94,7 @@ const StyledContent = styled.div`
     margin: 4% 0;
 
     p {
+      position: relative;
       width: 12%;
       height: 80px;
       display: flex;
@@ -105,48 +106,13 @@ const StyledContent = styled.div`
       font-size: 1.5rem;
       padding: 1rem;
       text-align: center;
-    }
-  }
 
-  .star {
-    img {
-      position: absolute;
-      width: 100px;
-    }
-
-    img:first-child {
-      top: 27%;
-      left: 18.5%;
-    }
-
-    img:nth-child(2) {
-      top: 27%;
-      left: 33%;
-    }
-    img:nth-child(3) {
-      top: 27%;
-      left: 48%;
-    }
-    img:nth-child(4) {
-      top: 27%;
-      left: 62.5%;
-    }
-    img:nth-child(5) {
-      top: 68.5%;
-      left: 18.5%;
-    }
-
-    img:nth-child(6) {
-      top: 68.5%;
-      left: 33%;
-    }
-    img:nth-child(7) {
-      top: 68.5%;
-      left: 48%;
-    }
-    img:nth-child(8) {
-      top: 68.5%;
-      left: 62.5%;
+      img {
+        scale: 0.2;
+        position: absolute;
+        right: 0;
+        bottom: -100%;
+      }
     }
   }
 
@@ -189,47 +155,12 @@ const StyledContent = styled.div`
         width: 14%;
         font-weight: 450;
         line-height: 1.2rem;
-      }
-    }
 
-    .star {
-      img {
-        width: 13%;
-      }
-
-      img:first-child {
-        top: 20%;
-        left: 2%;
-      }
-
-      img:nth-child(2) {
-        top: 20%;
-        left: 23%;
-      }
-      img:nth-child(3) {
-        top: 20%;
-        left: 44%;
-      }
-      img:nth-child(4) {
-        top: 20%;
-        left: 65%;
-      }
-      img:nth-child(5) {
-        top: 82%;
-        left: 2%;
-      }
-
-      img:nth-child(6) {
-        top: 82%;
-        left: 23%;
-      }
-      img:nth-child(7) {
-        top: 82%;
-        left: 44%;
-      }
-      img:nth-child(8) {
-        top: 82%;
-        left: 65%;
+        img {
+          scale: 0.12;
+          left: -320%;
+          z-index: 1;
+        }
       }
     }
   }
@@ -242,136 +173,24 @@ const StyledContent = styled.div`
         top: -70px;
       }
     }
-    .star {
-      img {
-        width: 13%;
-      }
 
-      img:first-child {
-        top: 14%;
-        left: 4%;
-      }
-
-      img:nth-child(2) {
-        top: 14%;
-        left: 25%;
-      }
-      img:nth-child(3) {
-        top: 14%;
-        left: 46%;
-      }
-      img:nth-child(4) {
-        top: 14%;
-        left: 67%;
-      }
-      img:nth-child(5) {
-        top: 53%;
-        left: 4%;
-      }
-
-      img:nth-child(6) {
-        top: 53%;
-        left: 25%;
-      }
-      img:nth-child(7) {
-        top: 53%;
-        left: 46%;
-      }
-      img:nth-child(8) {
-        top: 53%;
-        left: 67%;
+    .promotion {
+      p {
+        img {
+          scale: 0.12;
+          left: -300%;
+          z-index: 1;
+        }
       }
     }
   }
 
-  @media screen and (min-width: 360px) and (min-height: 790px) {
-    .star {
-      img {
-        width: 13%;
-      }
-
-      img:first-child {
-        top: 13%;
-        left: 4%;
-      }
-
-      img:nth-child(2) {
-        top: 13%;
-        left: 25%;
-      }
-      img:nth-child(3) {
-        top: 13%;
-        left: 46%;
-      }
-      img:nth-child(4) {
-        top: 13%;
-        left: 67%;
-      }
-      img:nth-child(5) {
-        top: 48%;
-        left: 4%;
-      }
-
-      img:nth-child(6) {
-        top: 48%;
-        left: 25%;
-      }
-      img:nth-child(7) {
-        top: 48%;
-        left: 46%;
-      }
-      img:nth-child(8) {
-        top: 48%;
-        left: 67%;
-      }
-    }
-  }
   @media screen and (min-width: 375px) and (min-height: 640px) {
     .header {
       h1 {
         scale: 0.6;
         left: 2%;
         top: -70px;
-      }
-    }
-    .star {
-      img {
-        width: 13%;
-      }
-
-      img:first-child {
-        top: 15%;
-        left: 4%;
-      }
-
-      img:nth-child(2) {
-        top: 15%;
-        left: 25%;
-      }
-      img:nth-child(3) {
-        top: 15%;
-        left: 46%;
-      }
-      img:nth-child(4) {
-        top: 15%;
-        left: 67%;
-      }
-      img:nth-child(5) {
-        top: 60%;
-        left: 4%;
-      }
-
-      img:nth-child(6) {
-        top: 60%;
-        left: 25%;
-      }
-      img:nth-child(7) {
-        top: 60%;
-        left: 46%;
-      }
-      img:nth-child(8) {
-        top: 60%;
-        left: 67%;
       }
     }
   }
@@ -383,90 +202,19 @@ const StyledContent = styled.div`
         top: -70px;
       }
     }
-    .star {
-      img {
-        width: 13%;
-      }
 
-      img:first-child {
-        top: 15%;
-        left: 4%;
-      }
-
-      img:nth-child(2) {
-        top: 15%;
-        left: 25%;
-      }
-      img:nth-child(3) {
-        top: 15%;
-        left: 46%;
-      }
-      img:nth-child(4) {
-        top: 15%;
-        left: 67%;
-      }
-      img:nth-child(5) {
-        top: 57%;
-        left: 4%;
-      }
-
-      img:nth-child(6) {
-        top: 57%;
-        left: 25%;
-      }
-      img:nth-child(7) {
-        top: 57%;
-        left: 46%;
-      }
-      img:nth-child(8) {
-        top: 57%;
-        left: 67%;
+    .promotion {
+      p {
+        img {
+          scale: 0.12;
+          left: -290%;
+          z-index: 1;
+          bottom: -105%;
+        }
       }
     }
   }
 
-  @media screen and (min-width: 390px) and (min-height: 750px) {
-    .star {
-      img {
-        width: 13%;
-      }
-
-      img:first-child {
-        top: 14%;
-        left: 4%;
-      }
-
-      img:nth-child(2) {
-        top: 14%;
-        left: 25%;
-      }
-      img:nth-child(3) {
-        top: 14%;
-        left: 46%;
-      }
-      img:nth-child(4) {
-        top: 14%;
-        left: 67%;
-      }
-      img:nth-child(5) {
-        top: 51%;
-        left: 4%;
-      }
-
-      img:nth-child(6) {
-        top: 51%;
-        left: 25%;
-      }
-      img:nth-child(7) {
-        top: 51%;
-        left: 46%;
-      }
-      img:nth-child(8) {
-        top: 51%;
-        left: 67%;
-      }
-    }
-  }
   @media screen and (min-width: 410px) and (min-height: 720px) {
     .header {
       h1 {
@@ -475,44 +223,15 @@ const StyledContent = styled.div`
         top: -70px;
       }
     }
-    .star {
-      img {
-        width: 13%;
-      }
 
-      img:first-child {
-        top: 14%;
-        left: 6%;
-      }
-
-      img:nth-child(2) {
-        top: 14%;
-        left: 25%;
-      }
-      img:nth-child(3) {
-        top: 14%;
-        left: 45%;
-      }
-      img:nth-child(4) {
-        top: 14%;
-        left: 66%;
-      }
-      img:nth-child(5) {
-        top: 53%;
-        left: 6%;
-      }
-
-      img:nth-child(6) {
-        top: 53%;
-        left: 25%;
-      }
-      img:nth-child(7) {
-        top: 53%;
-        left: 45%;
-      }
-      img:nth-child(8) {
-        top: 53%;
-        left: 66%;
+    .promotion {
+      p {
+        img {
+          scale: 0.12;
+          left: -270%;
+          z-index: 1;
+          bottom: -105%;
+        }
       }
     }
   }
@@ -524,44 +243,15 @@ const StyledContent = styled.div`
         top: -70px;
       }
     }
-    .star {
-      img {
-        width: 13%;
-      }
 
-      img:first-child {
-        top: 12.5%;
-        left: 6%;
-      }
-
-      img:nth-child(2) {
-        top: 12.5%;
-        left: 25%;
-      }
-      img:nth-child(3) {
-        top: 12.5%;
-        left: 45%;
-      }
-      img:nth-child(4) {
-        top: 12.5%;
-        left: 66%;
-      }
-      img:nth-child(5) {
-        top: 47%;
-        left: 6%;
-      }
-
-      img:nth-child(6) {
-        top: 47%;
-        left: 25%;
-      }
-      img:nth-child(7) {
-        top: 47%;
-        left: 45%;
-      }
-      img:nth-child(8) {
-        top: 47%;
-        left: 66%;
+    .promotion {
+      p {
+        img {
+          scale: 0.12;
+          left: -275%;
+          z-index: 1;
+          bottom: -105%;
+        }
       }
     }
   }
@@ -571,46 +261,6 @@ const StyledContent = styled.div`
         scale: 0.7;
         left: 8%;
         top: -70px;
-      }
-    }
-    .star {
-      img {
-        width: 13%;
-      }
-
-      img:first-child {
-        top: 14%;
-        left: 6%;
-      }
-
-      img:nth-child(2) {
-        top: 14%;
-        left: 25%;
-      }
-      img:nth-child(3) {
-        top: 14%;
-        left: 45%;
-      }
-      img:nth-child(4) {
-        top: 14%;
-        left: 66%;
-      }
-      img:nth-child(5) {
-        top: 52%;
-        left: 6%;
-      }
-
-      img:nth-child(6) {
-        top: 52%;
-        left: 25%;
-      }
-      img:nth-child(7) {
-        top: 52%;
-        left: 45%;
-      }
-      img:nth-child(8) {
-        top: 52%;
-        left: 66%;
       }
     }
   }
@@ -655,50 +305,18 @@ const StyledContent = styled.div`
         width: 14%;
         font-weight: 450;
         line-height: 1.4rem;
-      }
-    }
 
-    .star {
-      img {
-        width: 12%;
-      }
-
-      img:first-child {
-        top: 17%;
-        left: 3%;
-      }
-
-      img:nth-child(2) {
-        top: 17%;
-        left: 24%;
-      }
-      img:nth-child(3) {
-        top: 17%;
-        left: 45%;
-      }
-      img:nth-child(4) {
-        top: 17%;
-        left: 66%;
-      }
-      img:nth-child(5) {
-        top: 63%;
-        left: 3%;
-      }
-      img:nth-child(6) {
-        top: 63%;
-        left: 24%;
-      }
-      img:nth-child(7) {
-        top: 63%;
-        left: 45%;
-      }
-      img:nth-child(8) {
-        top: 63%;
-        left: 66%;
+        img {
+          scale: 0.15;
+          left: -175%;
+          z-index: 1;
+          bottom: -105%;
+        }
       }
     }
   }
-  @media screen and (min-width: 1280px) and (min-height: 740px) {
+
+  @media screen and (min-width: 1270px) and (min-height: 740px) {
     margin-top: 0%;
     height: auto;
 
@@ -744,46 +362,13 @@ const StyledContent = styled.div`
         width: 14%;
         font-weight: 450;
         line-height: 2rem;
-      }
-    }
 
-    .star {
-      img {
-        width: 8%;
-      }
-
-      img:first-child {
-        top: 21%;
-        left: 8.5%;
-      }
-
-      img:nth-child(2) {
-        top: 21%;
-        left: 28%;
-      }
-      img:nth-child(3) {
-        top: 21%;
-        left: 46%;
-      }
-      img:nth-child(4) {
-        top: 21%;
-        left: 66%;
-      }
-      img:nth-child(5) {
-        top: 63%;
-        left: 8.5%;
-      }
-      img:nth-child(6) {
-        top: 63%;
-        left: 28%;
-      }
-      img:nth-child(7) {
-        top: 63%;
-        left: 46%;
-      }
-      img:nth-child(8) {
-        top: 63%;
-        left: 66%;
+        img {
+          scale: 0.17;
+          left: -115%;
+          z-index: 1;
+          bottom: -105%;
+        }
       }
     }
   }
@@ -804,10 +389,22 @@ const Event2 = () => {
           <hr />
         </div>
         <div className="promotion">
-          <p>ส่วนลดค่าเครื่อง &nbsp;500 - 1,000</p>
-          <p>ส่วนลดค่ารายเดือน 25%</p>
-          <p>item สุดพิเศษจาก การีนา</p>
-          <p>online course มูลค่า 1,000-</p>
+          <p>
+            <img src={star1} alt="" srcset="" />
+            ส่วนลดค่าเครื่อง &nbsp;500 - 1,000
+          </p>
+          <p>
+            <img src={star2} alt="" srcset="" />
+            ส่วนลดค่ารายเดือน 25%
+          </p>
+          <p>
+            item สุดพิเศษจาก การีนา
+            <img src={star3} alt="" srcset="" />
+          </p>
+          <p>
+            online course มูลค่า 1,000-
+            <img src={star4} alt="" srcset="" />
+          </p>
         </div>
         <div className="topic">
           <hr />
@@ -815,20 +412,22 @@ const Event2 = () => {
           <hr />
         </div>
         <div className="promotion">
-          <p>ฟรีค่าติดตั้ง* 890-</p>
-          <p>ส่วนลดค่าติดตั้ง 100-</p>
-          <p>item สุดพิเศษจาก การีนา</p>
-          <p>online course มูลค่า 1,000-</p>
-        </div>
-        <div className="star">
-          <img src={star1} alt="" srcset="" />
-          <img src={star2} alt="" srcset="" />
-          <img src={star3} alt="" srcset="" />
-          <img src={star4} alt="" srcset="" />
-          <img src={star1} alt="" srcset="" />
-          <img src={star2} alt="" srcset="" />
-          <img src={star3} alt="" srcset="" />
-          <img src={star4} alt="" srcset="" />
+          <p>
+            ฟรีค่าติดตั้ง* 890-
+            <img src={star1} alt="" srcset="" />
+          </p>
+          <p>
+            <img src={star2} alt="" srcset="" />
+            ส่วนลดค่าติดตั้ง 100-
+          </p>
+          <p>
+            <img src={star3} alt="" srcset="" />
+            item สุดพิเศษจาก การีนา
+          </p>
+          <p>
+            <img src={star4} alt="" srcset="" />
+            online course มูลค่า 1,000-
+          </p>
         </div>
       </StyledContent>
     </div>

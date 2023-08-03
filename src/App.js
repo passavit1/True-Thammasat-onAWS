@@ -9,7 +9,6 @@ import {
   Event4,
   Event5,
   Test,
-  Compare,
   LandingPage,
 } from "./Pages/index";
 
@@ -25,7 +24,6 @@ function App() {
           <Route path="/event3" element={<Event3 />} />
           <Route path="/event4" element={<Event4 />} />
           <Route path="/event5" element={<Event5 />} />
-          <Route path="/compare" element={<Compare />} />
           <Route path="/Test" element={<Test />} />
         </Routes>
       </BrowserRouter>
