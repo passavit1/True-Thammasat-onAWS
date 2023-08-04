@@ -71,14 +71,15 @@ const StyledContainer = styled.div`
     }
 
     .contract {
-      height: 20%;
-      width: 100%;
-      display: flex;
-      justify-content: center;
+      width: 80%;
+      a {
+        display: flex;
+        justify-content: center;
+      }
     }
   }
 
-  @media screen and (min-width: 320px) {
+  @media screen and (min-width: 0px) {
     .content {
       height: auto;
       .mainContent {
@@ -118,8 +119,10 @@ const StyledContainer = styled.div`
         height: auto;
         margin-bottom: 5%;
 
-        img {
-          width: 100%;
+        a {
+          img {
+            width: 100%;
+          }
         }
       }
     }
@@ -149,8 +152,10 @@ const StyledContainer = styled.div`
       .contract {
         align-items: center;
 
-        img {
-          width: 80%;
+        a {
+          img {
+            width: 80%;
+          }
         }
       }
     }
@@ -179,8 +184,10 @@ const StyledContainer = styled.div`
       .contract {
         align-items: center;
 
-        img {
-          width: 80%;
+        a {
+          img {
+            width: 80%;
+          }
         }
       }
     }
@@ -206,8 +213,10 @@ const StyledContainer = styled.div`
         margin-bottom: 0;
         margin-top: -5%;
 
-        img {
-          width: 60%;
+        a {
+          img {
+            width: 60%;
+          }
         }
       }
     }
@@ -245,8 +254,10 @@ const StyledContainer = styled.div`
         margin-bottom: 0;
         margin-top: -5%;
 
-        img {
-          width: 60%;
+        a {
+          img {
+            width: 60%;
+          }
         }
       }
     }
@@ -269,7 +280,13 @@ const Event4 = () => {
           </div>
         </div>
         <div className="contract">
-          <img src={contract} alt="" srcset="" />
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSdqI-GNeDrgmJ_BhqsaUbloIyfw_40ECxsNO27kYyiW5ADBjw/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={contract} alt="" srcset="" />
+          </a>
         </div>
       </div>
     </StyledContainer>

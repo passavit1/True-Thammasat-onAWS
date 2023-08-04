@@ -101,36 +101,35 @@ const StyledContainer = styled.div`
           text-align: left;
         }
 
-        .addline {
+        td {
           div {
             margin: 1% 0 2% 1%;
           }
 
-          button {
-            width: 20%;
-            border: 2px solid black;
-            border-radius: 20px;
-            font-weight: bold;
-            background-color: white;
-            padding: 1% 0;
-            margin-left: 5%;
-          }
-          button:hover {
-            background-color: green;
-            transition: 0.5s ease-in-out;
+          a {
+            button {
+              width: 20%;
+              border: 2px solid black;
+              border-radius: 20px;
+              font-weight: bold;
+              background-color: white;
+              padding: 1% 0;
+              margin-left: 5%;
+              transition: 0.5s ease-in-out;
+            }
+            button:hover {
+              scale: 1.2;
+            }
           }
         }
 
         .likePage {
           div {
             display: flex;
-            img {
-              width: 30%;
-              padding-top: 2%;
-            }
-
-            img:first-child {
-              margin-right: 3%;
+            a {
+              img {
+                width: 100%;
+              }
             }
           }
         }
@@ -141,6 +140,28 @@ const StyledContainer = styled.div`
       .table {
         tbody tr {
           height: 6vh;
+
+          &:nth-child(4),
+          &:nth-child(5) {
+            button {
+              padding: 3% 5%;
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 1600px) {
+      .table {
+        tbody tr {
+          &:nth-child(4),
+          &:nth-child(5) {
+            button {
+              padding: 3% 5%;
+              font-size: 0.9rem;
+            }
+          }
         }
       }
     }
@@ -179,10 +200,6 @@ const StyledContainer = styled.div`
               margin-left: 5%;
               margin-bottom: 2%;
             }
-            button:hover {
-              background-color: green;
-              transition: 0.5s ease-in-out;
-            }
           }
 
           .likePage {
@@ -199,10 +216,46 @@ const StyledContainer = styled.div`
               }
             }
           }
+
+          &:nth-child(4),
+          &:nth-child(5) {
+            button {
+              padding: 4% 8%;
+              font-size: 0.8rem;
+            }
+          }
+
+          &:nth-child(7) {
+            button {
+              padding: 2% 8%;
+            }
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 1300px) {
+      .table {
+        tbody tr {
+          &:nth-child(4),
+          &:nth-child(5) {
+            button {
+              width: 30%;
+              padding: 4% 8%;
+              font-size: 1rem;
+            }
+          }
+          &:nth-child(7) {
+            button {
+              padding: 2% 8%;
+              width: 30%;
+            }
+          }
         }
       }
     }
     @media screen and (max-width: 1100px) {
+      margin-top: 2%;
       .topic {
         padding: 1.2%;
         width: 30%;
@@ -239,10 +292,6 @@ const StyledContainer = styled.div`
               margin-left: 20%;
               margin-bottom: 2%;
             }
-            button:hover {
-              background-color: green;
-              transition: 0.5s ease-in-out;
-            }
           }
 
           .likePage {
@@ -257,6 +306,21 @@ const StyledContainer = styled.div`
                 margin-right: 5%;
                 margin-left: 1%;
               }
+            }
+          }
+
+          &:nth-child(4),
+          &:nth-child(5) {
+            button {
+              width: 60%;
+              padding: 4% 8%;
+              font-size: 1rem;
+            }
+          }
+          &:nth-child(7) {
+            button {
+              padding: 2% 8%;
+              width: 50%;
             }
           }
         }
@@ -276,8 +340,14 @@ const StyledContainer = styled.div`
         tbody tr {
           font-size: 0.85rem;
 
-          button {
-            font-size: 0.75rem;
+          .addline {
+            a {
+              button {
+                width: 70%;
+                font-size: 0.75rem;
+                margin-left: 12%;
+              }
+            }
           }
         }
       }
@@ -294,6 +364,21 @@ const StyledContainer = styled.div`
           font-size: 0.8rem;
           line-height: 1.5rem;
 
+          &:nth-child(4),
+          &:nth-child(5) {
+            button {
+              width: 70%;
+              padding: 4% 8%;
+              font-size: 0.8rem;
+            }
+          }
+          &:nth-child(7) {
+            button {
+              padding: 2% 8%;
+              width: 70%;
+              font-size: 0.8rem;
+            }
+          }
           .addline {
             div {
               margin: 1% 0 1% 1%;
@@ -304,10 +389,6 @@ const StyledContainer = styled.div`
               padding: 2% 0;
               margin-left: 20%;
               margin-bottom: 2%;
-            }
-            button:hover {
-              background-color: green;
-              transition: 0.5s ease-in-out;
             }
           }
 
@@ -326,6 +407,18 @@ const StyledContainer = styled.div`
             }
           }
         }
+      }
+    }
+
+    @media screen and (max-width: 770px) {
+      .topic {
+        font-size: 1.3rem;
+      }
+    }
+
+    @media screen and (max-width: 670px) {
+      .topic {
+        font-size: 1.2rem;
       }
     }
     @media screen and (max-width: 576px) {
@@ -350,6 +443,23 @@ const StyledContainer = styled.div`
           font-size: 0.9rem;
           font-weight: 550;
 
+          &:nth-child(4),
+          &:nth-child(5) {
+            button {
+              width: 75%;
+              padding: 5% 8%;
+              font-size: 0.7rem;
+            }
+          }
+          &:nth-child(7) {
+            button {
+              padding: 2% 8%;
+              width: 80%;
+              font-size: 0.8rem;
+              margin-left: -2%;
+            }
+          }
+
           td {
             text-align: center !important;
           }
@@ -358,17 +468,14 @@ const StyledContainer = styled.div`
             div {
               margin: 1% 0 1% 1%;
             }
-
-            button {
-              width: 80%;
-              padding: 2% 0;
-              margin-left: 5%;
-              margin-bottom: 2%;
-              font-size: 0.8rem;
-            }
-            button:hover {
-              background-color: green;
-              transition: 0.5s ease-in-out;
+            a {
+              button {
+                width: 80%;
+                padding: 2% 0;
+                margin-left: 5%;
+                margin-bottom: 2%;
+                font-size: 0.6rem;
+              }
             }
           }
 
@@ -415,6 +522,23 @@ const StyledContainer = styled.div`
           font-size: 0.8rem;
           font-weight: 550;
 
+          &:nth-child(4),
+          &:nth-child(5) {
+            button {
+              width: 75%;
+              padding: 5% 8%;
+              font-size: 0.6rem;
+            }
+          }
+          &:nth-child(7) {
+            button {
+              padding: 2% 8%;
+              width: 80%;
+              font-size: 0.6rem;
+              margin-left: -2%;
+            }
+          }
+
           .addline {
             button {
               width: 100%;
@@ -422,10 +546,6 @@ const StyledContainer = styled.div`
               margin-left: 0%;
               margin-bottom: 2%;
               font-size: 0.7rem;
-            }
-            button:hover {
-              background-color: green;
-              transition: 0.5s ease-in-out;
             }
           }
 
@@ -460,17 +580,36 @@ const StyledContainer = styled.div`
           font-size: 0.7rem;
           font-weight: 550;
 
+          &:nth-child(4),
+          &:nth-child(5) {
+            button {
+              width: 75%;
+              padding: 5% 8%;
+              font-size: 0.5rem;
+            }
+          }
+          &:nth-child(7) {
+            button {
+              padding: 2% 8%;
+              width: 80%;
+              font-size: 0.5rem;
+              margin-left: -2%;
+            }
+          }
+
           .addline {
             div {
               margin-bottom: 5%;
             }
 
-            button {
-              width: 100%;
-              padding: 2% 0;
-              margin-left: 0%;
-              margin-bottom: 2%;
-              font-size: 0.6rem;
+            a {
+              button {
+                width: 80%;
+                padding: 2% 0;
+                margin-left: 0%;
+                margin-bottom: 2%;
+                font-size: 0.5rem;
+              }
             }
           }
 
@@ -522,10 +661,12 @@ const StyledContainer = styled.div`
           line-height: 0.9rem;
 
           .addline {
-            button {
-              width: 100%;
-              padding: 2.5% 0;
-              font-size: 0.5rem;
+            a {
+              button {
+                width: 70%;
+                padding: 2.5% 0;
+                font-size: 0.3rem;
+              }
             }
           }
 
@@ -571,7 +712,13 @@ const Event1 = () => {
               <td>ลุ้นจับไข่ รางวัลพิเศษกับทรู #TruexTU</td>
               <td className="addline">
                 <div>แอดไลน์ True Klong luang</div>
-                <button>CLICK HERE </button>
+                <a
+                  href=" https://shorturl.at/nwzRT"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button>CLICK HERE</button>
+                </a>
               </td>
             </tr>
             <tr>
@@ -581,8 +728,20 @@ const Event1 = () => {
               <td className="likePage">
                 <div>Like & Follow Tiktok</div>
                 <div>
-                  <img src={like1} alt="" />
-                  <img src={like2} alt="" />
+                  <a
+                    href="https://www.tiktok.com/@freefirethofficial"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={like1} alt="" />
+                  </a>
+                  <a
+                    href="https://www.tiktok.com/@ffesportsth"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <img src={like2} alt="" />
+                  </a>
                 </div>
               </td>
             </tr>
@@ -597,7 +756,15 @@ const Event1 = () => {
               <td>
                 ได้เงินคืน 20 บาทเมื่อสมัครทรูมันนี่ และใช้ครั้งแรกที่ 7-eleven
               </td>
-              <td></td>
+              <td>
+                <a
+                  href="https://www.truemoney.com/inapp/tmn-master-7-eleven-vm/?utm_source=OFFLINE&utm_campaign=OFFLINE%7CVM_7ELEVEN_CB_20THB%7C20230118%7C%7CNEWACQ%7CVMKT%7CQRCODE&utm_medium=QRCODE&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL8nN00ssKNDLyczL1k%2FVD%2FM1NzT0DwgBAIpkg4QfAAAA&%24web_only=true&_branch_match_id=835331498801519198"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button>CLICK HERE </button>
+                </a>
+              </td>
             </tr>
             <tr>
               <td>4</td>
@@ -606,7 +773,15 @@ const Event1 = () => {
                 สิทธ์ลุ้นตั๋วเครื่องบินไป กรุงเทพ-โซล / Poster Black Pink
                 Limited Edition พร้อมลายเซนลิซ่า
               </td>
-              <td></td>
+              <td>
+                <a
+                  href="https://www.truemoney.com/inapp/tmn-master-7-eleven-vm/?utm_source=OFFLINE&utm_campaign=OFFLINE%7CVM_7ELEVEN_CB_20THB%7C20230118%7C%7CNEWACQ%7CVMKT%7CQRCODE&utm_medium=QRCODE&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL8nN00ssKNDLyczL1k%2FVD%2FM1NzT0DwgBAIpkg4QfAAAA&%24web_only=true&_branch_match_id=835331498801519198"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button>CLICK HERE </button>
+                </a>
+              </td>
             </tr>
             <tr>
               <td>5</td>
@@ -623,7 +798,16 @@ const Event1 = () => {
               <td>6</td>
               <td>True Course</td>
               <td>Free Workshop!! UpSkill สร้างรายได้ ตั้งแต่วัยเรียน</td>
-              <td>register ได้ก่อนใคร</td>
+              <td>
+                <div>register ได้ก่อนใคร</div>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdqI-GNeDrgmJ_BhqsaUbloIyfw_40ECxsNO27kYyiW5ADBjw/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button>CLICK HERE </button>
+                </a>
+              </td>
             </tr>
           </tbody>
         </div>

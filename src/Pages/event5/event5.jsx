@@ -7,6 +7,8 @@ import v2 from "../../items/contentCreater/v2.svg";
 import v3 from "../../items/contentCreater/v3.svg";
 import v4 from "../../items/contentCreater/v4.svg";
 import search from "../../items/contentCreater/search.svg";
+import register from "../../items/registerNow.svg";
+import moreInfo from "../../items/contentCreater/moreIOnfoWhite.svg";
 
 const StyledContainer = styled.div`
   .container {
@@ -23,7 +25,7 @@ const StyledContainer = styled.div`
     }
   }
 
-  @media screen and (min-width: 320px) {
+  @media screen and (min-width: 0px) {
     .container {
       height: auto;
       display: flex;
@@ -42,8 +44,32 @@ const StyledContainer = styled.div`
         }
 
         .poster {
+          position: relative;
+          margin-bottom: 5%;
           img {
             width: 100%;
+          }
+
+          .button {
+            position: absolute;
+            left: 5%;
+            bottom: 0;
+            a {
+              &:first-child {
+                margin-right: 5%;
+
+                img {
+                  width: 25%;
+                }
+              }
+
+              &:last-child {
+                img {
+                  width: 15%;
+                  padding-bottom: 3%;
+                }
+              }
+            }
           }
         }
 
@@ -79,6 +105,15 @@ const StyledContainer = styled.div`
           }
         }
       }
+    }
+  }
+
+  @media screen and (min-width: 500px) {
+    .time {
+      font-size: 1.2rem;
+    }
+    .description {
+      font-size: 1.5rem;
     }
   }
 
@@ -208,6 +243,22 @@ const Event5 = () => {
           </div>
           <div className="poster">
             <img src={banner} alt=".loading." srcset="" />
+            <div className="button">
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSdqI-GNeDrgmJ_BhqsaUbloIyfw_40ECxsNO27kYyiW5ADBjw/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={register} alt="" />
+              </a>
+              <a
+                href="https://creators.trueid.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={moreInfo} alt="" />
+              </a>
+            </div>
           </div>
           <div className="video">
             <div className="v1">

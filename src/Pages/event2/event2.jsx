@@ -9,6 +9,7 @@ import pro5 from "../../items/event2/pro5.svg";
 import pro6 from "../../items/event2/pro6.svg";
 import pro7 from "../../items/event2/pro7.svg";
 import pro8 from "../../items/event2/pro8.svg";
+import moreInfo from "../../items/event2/moreInfo.svg";
 
 const StyledContainer = styled.div`
   color: white;
@@ -105,6 +106,15 @@ const StyledContainer = styled.div`
         width: 18%;
       }
     }
+
+    a {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2%;
+      img {
+        width: 15%;
+      }
+    }
   }
 
   @media screen and (max-width: 1100px) {
@@ -128,6 +138,13 @@ const StyledContainer = styled.div`
       .promotion {
         img {
           width: 22%;
+        }
+      }
+
+      a {
+        margin-bottom: 0%;
+        img {
+          width: 20%;
         }
       }
     }
@@ -154,6 +171,13 @@ const StyledContainer = styled.div`
       .promotion {
         img {
           width: 30%;
+        }
+      }
+
+      a {
+        margin-bottom: 2%;
+        img {
+          width: 25%;
         }
       }
     }
@@ -204,6 +228,13 @@ const StyledContainer = styled.div`
           margin-bottom: 1rem;
         }
       }
+
+      a {
+        margin-bottom: 2%;
+        img {
+          width: 30%;
+        }
+      }
     }
   }
 
@@ -251,6 +282,13 @@ const Event2 = () => {
           <img src={pro7} alt="" />
           <img src={pro8} alt="" />
         </div>
+        <a
+          href="https://page.line.me/?accountId=170awxfx"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={moreInfo} alt="" />
+        </a>
       </div>
     </StyledContainer>
   );

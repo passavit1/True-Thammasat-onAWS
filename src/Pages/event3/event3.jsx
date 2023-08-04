@@ -120,17 +120,20 @@ const StyledContainer = styled.div`
           }
 
           .button {
+            margin-left: -5%;
           }
 
-          .logo {
-            margin-left: -30%;
+          .logo{
+            padding-left:7%;
           }
+
+          
         }
       }
     }
   }
 
-  @media screen and (min-width: 320px) {
+  @media screen and (min-width: 0px) {
     .container {
       height: 150vh;
 
@@ -572,10 +575,22 @@ const Event3 = () => {
             </div>
             <div className="contract">
               <div className="button">
-                <img src={register} alt="" srcset="" />
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdqI-GNeDrgmJ_BhqsaUbloIyfw_40ECxsNO27kYyiW5ADBjw/viewform"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={register} alt="" srcset="" />
+                </a>
               </div>
               <div className="logo">
-                <img src={trueLab} alt="" srcset="" />
+                <a
+                  href="https://www.google.com/maps/place/14%C2%B004'17.8%22N+100%C2%B036'08.6%22E/@14.0714663,100.6022658,21z/data=!4m4!3m3!8m2!3d14.071602!4d100.602376?entry=tts&shorturl=1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={trueLab} alt="" srcset="" />
+                </a>
               </div>
             </div>
           </div>
