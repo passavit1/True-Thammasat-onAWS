@@ -387,22 +387,25 @@ const Index_page = () => {
         <div className="card" onClick={() => handleButtonClick("/event1")}>
           <div>5</div>
           <div>Booth งานรับเพื่อนใหม่</div>
-          <div>เล่นเกมส์ ลุ้นรางวัลรวมกว่า xx บาท</div>
+          <div>รับคูปอง 100 บาท* ร่วมล่นเกมส์ ลุ้นรางวัลรวมกว่า 30,000 บาท</div>
         </div>
         <div className="card" onClick={() => handleButtonClick("/event2")}>
           <div>5 - 22</div>
           <div>สาย Shop</div>
           <div>
-            Sales! คุ้มกว่า การันตี!! พร้อมของแถมสุดพิเศษมูลค่ารวม xx บาท
+            Sales! คุ้มกว่า การันตี!! พร้อมของแถมสุดพิเศษมูลค่าสูงสุด 2,500 บาท
           </div>
         </div>
         <div className="topic">
           <hr />
-          <p>คอร์สฟรี Up Skills สร้างรายได้ </p>
+          <p>
+            คอร์ส<span style={{ color: "rgb(255,207,3)" }}>ฟรี</span> Up Skills
+            สร้างรายได้{" "}
+          </p>
           <hr />
         </div>
         <div className="card" onClick={() => handleButtonClick("/event3")}>
-          <div>7 , 14 , 16 </div>
+          <div>7 , 16 </div>
           <div>สายมู</div>
           <div>ไขกุญแจ เปิดโลกลับ กับศาสตร์ตัวเลขที่จะเปลี่ยนชีวิตคุณ</div>
         </div>

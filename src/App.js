@@ -18,7 +18,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/index" element={<Index_page />} />
+          <Route path="/agenda" element={<Index_page />} />
           <Route path="/event1" element={<Event1 />} />
           <Route path="/event2" element={<Event2 />} />
           <Route path="/event3" element={<Event3 />} />

@@ -81,14 +81,14 @@ const LandingPage = () => {
     setAnimate(true);
     setTimeout(() => {
       setAnimate(false);
-      window.location.href = "/index";
+      window.location.href = "/agenda";
     }, 750); // Adjust the delay to match the animation duration
   };
 
   return (
     <div style={{ width: "100%" }}>
       <StyledLogo className={animate ? "animate" : ""}>
-        <Link to="/index" onClick={handleImageClick}>
+        <Link to="/agenda" onClick={handleImageClick}>
           <img src={logo} alt="" />
         </Link>
       </StyledLogo>

@@ -82,7 +82,7 @@ const StyledNav = styled.div`
 const Nav = () => {
   return (
     <StyledNav>
-      <Link to="/index" style={{ textDecoration: "none" }}>
+      <Link to="/agenda" style={{ textDecoration: "none" }}>
         <div className="inside">
           <img src={logo} alt="" srcset="" />
         </div>

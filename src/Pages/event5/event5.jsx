@@ -252,7 +252,7 @@ const Event5 = () => {
                 <img src={register} alt="" />
               </a>
               <a
-                href="https://creators.trueid.net/"
+                href="https://news.trueid.net/detail/4G2E037VOr2q"
                 target="_blank"
                 rel="noopener noreferrer"
               >

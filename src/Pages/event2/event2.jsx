@@ -51,11 +51,10 @@ const StyledContainer = styled.div`
           rgb(128, 3, 154),
           rgb(255, 0, 101)
         );
-        margin-right: 5%;
       }
 
       div {
-        width: 13%;
+        width: 35%;
         background: rgb(55, 47, 42);
         font-size: 1.5rem;
         text-align: center;
@@ -126,6 +125,7 @@ const StyledContainer = styled.div`
 
         div {
           font-size: 1.4rem;
+          width: 50%;
         }
       }
 
@@ -145,6 +145,16 @@ const StyledContainer = styled.div`
         margin-bottom: 0%;
         img {
           width: 20%;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .container {
+      .header {
+        div {
+          width: 60%;
         }
       }
     }
@@ -183,6 +193,16 @@ const StyledContainer = styled.div`
     }
   }
 
+  @media screen and (max-width: 650px) {
+    .container {
+      .header {
+        div {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+
   @media screen and (max-width: 576px) {
     .container {
       .header {
@@ -201,11 +221,12 @@ const StyledContainer = styled.div`
 
         div {
           border-radius: 20px;
-          font-size: 1.3rem;
+          font-size: 1.2rem;
           margin-bottom: 1rem;
-          width: 50%;
+          width: 70%;
           margin-left: 0;
-          height: 60px;
+          height: 50px;
+          padding: 0 1rem;
         }
       }
 
@@ -238,8 +259,28 @@ const StyledContainer = styled.div`
     }
   }
 
+  @media screen and (max-width: 550px) {
+    .container {
+      h1 {
+        font-size: 1rem;
+      }
+
+      .header {
+        div {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+
   @media screen and (max-width: 450px) {
     .container {
+      .header {
+        div {
+          font-size: 1rem;
+        }
+      }
+
       .topic {
         p {
           width: 20%;
@@ -257,7 +298,7 @@ const Event2 = () => {
       <div className="container">
         <div className="header">
           <h1>สาย shop</h1>
-          <div>Pre-order ภายในงาน</div>
+          <div>Pre-order รับเลย !!! ของแถมมูลค่ารวม 2,500 บาท</div>
         </div>
         <div className="topic">
           <hr />

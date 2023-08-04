@@ -2,8 +2,8 @@ import React from "react";
 import { Nav } from "../../components/index";
 import styled from "styled-components";
 import agenda from "../../items/eventGame/agenda.svg";
-import contract from "../../items/eventGame/contract.svg";
-import winzy from "../../items/eventGame/winzy.png";
+import contract from "../../items/registerNow.svg";
+import winzy from "../../items/eventGame/winzy.svg";
 import freeItem from "../../items/eventGame/freeItem.svg";
 
 const StyledContainer = styled.div`
@@ -34,6 +34,7 @@ const StyledContainer = styled.div`
 
       .pic {
         margin: 1% 5% 1% 10%;
+        width: 50%;
       }
 
       .agenda {
@@ -73,6 +74,7 @@ const StyledContainer = styled.div`
     .contract {
       width: 80%;
       a {
+        margin-bottom: 2%;
         display: flex;
         justify-content: center;
       }
@@ -90,7 +92,7 @@ const StyledContainer = styled.div`
           justify-content: center;
 
           img {
-            width: 90%;
+            width: 110%;
           }
         }
 
@@ -109,7 +111,7 @@ const StyledContainer = styled.div`
           }
 
           #freeItem {
-            width: 70%;
+            width: 40%;
           }
         }
       }
@@ -121,7 +123,7 @@ const StyledContainer = styled.div`
 
         a {
           img {
-            width: 100%;
+            width: 50%;
           }
         }
       }
@@ -135,17 +137,18 @@ const StyledContainer = styled.div`
         .pic {
           margin: auto auto;
           img {
-            width: 95%;
+            width: 110%;
+            margin-left: 25%;
             margin-top: -10%;
           }
         }
         .agenda {
           margin-top: 2%;
           #agenda {
-            width: 95%;
+            width: 65%;
           }
           #freeItem {
-            width: 60%;
+            width: 40%;
           }
         }
       }
@@ -154,7 +157,7 @@ const StyledContainer = styled.div`
 
         a {
           img {
-            width: 80%;
+            width: 30%;
           }
         }
       }
@@ -167,17 +170,17 @@ const StyledContainer = styled.div`
         .pic {
           margin: auto auto;
           img {
-            width: 95%;
+            width: 100%;
             margin-top: -10%;
           }
         }
         .agenda {
           margin-top: 2%;
           #agenda {
-            width: 95%;
+            width: 75%;
           }
           #freeItem {
-            width: 60%;
+            width: 35%;
           }
         }
       }
@@ -186,12 +189,27 @@ const StyledContainer = styled.div`
 
         a {
           img {
-            width: 80%;
+            width: 40%;
           }
         }
       }
     }
   }
+
+  @media screen and (min-width: 800px) {
+    .content {
+      .mainContent {
+        .contract {
+          a {
+            img {
+              width: 20%;
+            }
+          }
+        }
+      }
+    }
+  }
+
   @media screen and (min-width: 1280px) {
     .content {
       .mainContent {
@@ -215,48 +233,7 @@ const StyledContainer = styled.div`
 
         a {
           img {
-            width: 60%;
-          }
-        }
-      }
-    }
-  }
-
-  @media screen and (min-width: 1920px) and (min-height: 1080px) {
-    .content {
-      .mainContent {
-        .pic {
-          width: 50%;
-          img {
-            width: 90%;
-            margin-top: -100px;
-          }
-        }
-        .agenda {
-          width: 50%;
-          margin-right: 3%;
-
-          .icon {
-            margin-bottom: 5%;
-          }
-
-          #agenda {
-            width: 80%;
-          }
-
-          #freeItem {
-            width: 50%;
-          }
-        }
-      }
-      .contract {
-        align-items: center;
-        margin-bottom: 0;
-        margin-top: -5%;
-
-        a {
-          img {
-            width: 60%;
+            width: 20%;
           }
         }
       }

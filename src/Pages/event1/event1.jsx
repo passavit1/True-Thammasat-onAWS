@@ -709,7 +709,10 @@ const Event1 = () => {
             <tr>
               <td>0</td>
               <td>อยากดูแลเพื่อนใหม่</td>
-              <td>ลุ้นจับไข่ รางวัลพิเศษกับทรู #TruexTU</td>
+              <td>
+                แอดไลน์รับคูปองฟรี 100 บาท* ลุ้นจับไข่ รางวัลพิเศษกับทรู
+                #TruexTU{" "}
+              </td>
               <td className="addline">
                 <div>แอดไลน์ True Klong luang</div>
                 <a
@@ -775,7 +778,7 @@ const Event1 = () => {
               </td>
               <td>
                 <a
-                  href="https://www.truemoney.com/inapp/tmn-master-7-eleven-vm/?utm_source=OFFLINE&utm_campaign=OFFLINE%7CVM_7ELEVEN_CB_20THB%7C20230118%7C%7CNEWACQ%7CVMKT%7CQRCODE&utm_medium=QRCODE&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL8nN00ssKNDLyczL1k%2FVD%2FM1NzT0DwgBAIpkg4QfAAAA&%24web_only=true&_branch_match_id=835331498801519198"
+                  href="https://www.truemoney.com/lisa-campaign/?_branch_match_id=982651575264788357&utm_medium=marketing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXL8nN00ssKNDLyczL1s%2FJLE4sLknMS0lNBQBM7RZGIAAAAA%3D%3D"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -790,16 +793,17 @@ const Event1 = () => {
                 Online Course จากผู้มีประสบการณ์ตรงสอน skill
                 ที่จำเป็นในโลกการทำงาน มูลค่า 1,000 บาท
               </td>
-              <td>
-                ให้สัมภาษณ์ว่าอยากเรียน course ไหน เพราะอะไร เอาไปต่อยอดอย่างไร
-              </td>
+              <td>ติดต่อ Staff หน้าบูธได้เลยค่ะ ^ - ^</td>
             </tr>
             <tr>
               <td>6</td>
               <td>True Course</td>
-              <td>Free Workshop!! UpSkill สร้างรายได้ ตั้งแต่วัยเรียน</td>
               <td>
-                <div>register ได้ก่อนใคร</div>
+                <span style={{ color: "rgb(255,38,16)" }}>Free</span> Workshop!!
+                UpSkill สร้างรายได้ ตั้งแต่วัยเรียน
+              </td>
+              <td>
+                <div>Register ได้ก่อนใคร จำนวนจำกัด !!!</div>
                 <a
                   href="https://docs.google.com/forms/d/e/1FAIpQLSdqI-GNeDrgmJ_BhqsaUbloIyfw_40ECxsNO27kYyiW5ADBjw/viewform"
                   target="_blank"
