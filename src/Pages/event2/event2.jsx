@@ -2,23 +2,34 @@ import React from "react";
 import { Nav } from "../../components/index";
 import styled from "styled-components";
 import pro1 from "../../items/event2/pro1.svg";
-import pro2 from "../../items/event2/pro1.svg";
-import pro3 from "../../items/event2/pro1.svg";
-import pro4 from "../../items/event2/pro1.svg";
-import pro5 from "../../items/event2/pro1.svg";
-import pro6 from "../../items/event2/pro1.svg";
-import pro7 from "../../items/event2/pro1.svg";
-import pro8 from "../../items/event2/pro1.svg";
+import pro2 from "../../items/event2/pro2.svg";
+import pro3 from "../../items/event2/pro3.svg";
+import pro4 from "../../items/event2/pro4.svg";
+import pro5 from "../../items/event2/pro5.svg";
+import pro6 from "../../items/event2/pro6.svg";
+import pro7 from "../../items/event2/pro7.svg";
+import pro8 from "../../items/event2/pro8.svg";
 
 const StyledContainer = styled.div`
   color: white;
   height: 100vh;
+  width: 100%;
   .container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     width: 100%;
+    @keyframes tilt-in-right-1 {
+      0% {
+        transform: rotateX(-30deg) translateX(300px) skewX(30deg);
+        opacity: 0;
+      }
+      100% {
+        transform: rotateX(0deg) translateX(0) skewX(0deg);
+        opacity: 1;
+      }
+    }
 
     .header {
       display: flex;
@@ -97,7 +108,7 @@ const StyledContainer = styled.div`
     }
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1100px) {
     .container {
       .header {
         h1 {
@@ -105,13 +116,13 @@ const StyledContainer = styled.div`
         }
 
         div {
-          font-size: 1.3rem;
+          font-size: 1.4rem;
         }
       }
 
       .topic {
         p {
-          font-size: 1.1rem;
+          font-size: 1.2rem;
         }
       }
 
@@ -123,7 +134,7 @@ const StyledContainer = styled.div`
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 790px) {
     .container {
       .header {
         h1 {
@@ -154,37 +165,55 @@ const StyledContainer = styled.div`
       .header {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        margin: 0 0 1.5% 0;
 
         h1 {
-          font-size: 160%;
+          font-size: 190%;
+          margin: 0;
           margin-bottom: 1rem;
+          width: 50%;
+          border-radius: 20px;
         }
 
         div {
-          font-size: 1.2rem;
-          margin-right: 0;
+          border-radius: 20px;
+          font-size: 1.3rem;
           margin-bottom: 1rem;
+          width: 50%;
+          margin-left: 0;
+          height: 60px;
         }
       }
 
       .topic {
-        flex-direction: column;
-        align-items: center;
-
         hr {
-          margin: 10px 0;
+          margin: 5% 2%;
+          width: 25%;
         }
 
         p {
-          font-size: 1rem;
+          width: 25%;
+          font-size: 1.3rem;
           margin-bottom: 1rem;
         }
       }
 
       .promotion {
         img {
-          width: 50%;
+          width: 40%;
           margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .container {
+      .topic {
+        p {
+          width: 20%;
+          font-size: 1rem;
         }
       }
     }
