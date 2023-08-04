@@ -55,13 +55,13 @@ const StyledContainer = styled.div`
 
       div {
         width: 13%;
-        height: 5.4rem;
         background: rgb(55, 47, 42);
         font-size: 1.5rem;
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 0.5% 0;
       }
     }
 
@@ -86,7 +86,6 @@ const StyledContainer = styled.div`
         );
         padding: 0.5%;
         font-weight: 700;
-        height: 60px;
         width: 10%;
         display: flex;
         justify-content: center;
