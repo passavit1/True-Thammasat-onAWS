@@ -3,7 +3,11 @@ import { Nav } from "../components/index";
 import styled from "styled-components";
 
 const Test = () => {
-  return <div>hello tester</div>;
+  return (
+    <div>
+      <Nav />
+    </div>
+  );
 };
 
 export default Test;

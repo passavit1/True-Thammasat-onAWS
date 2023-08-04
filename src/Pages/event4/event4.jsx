@@ -7,13 +7,15 @@ import winzy from "../../items/eventGame/winzy.svg";
 import freeItem from "../../items/eventGame/freeItem.svg";
 
 const StyledContainer = styled.div`
+  width: 100%;
+  height: 100%;
+
   .content {
-    height: 80vh;
-    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    width: 100%;
+    margin-top: 1%;
 
     animation: tilt-in-right-1 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     @keyframes tilt-in-right-1 {
@@ -28,212 +30,130 @@ const StyledContainer = styled.div`
     }
 
     .mainContent {
-      height: 80%;
-      width: 100%;
       display: flex;
+      flex-direction: row;
+      width: 100%;
 
-      .pic {
-        margin: 1% 5% 1% 10%;
+      .winzy {
         width: 50%;
+
+        img {
+          width: 70%;
+          margin-left: 25%;
+        }
       }
 
       .agenda {
+        width: 50%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        height: 100%;
 
         .icon {
-          width: 200px;
-          height: 40px;
+          width: 60%;
           color: white;
           background: linear-gradient(
             to right,
             rgb(255, 19, 146),
             rgb(255, 102, 0)
           );
-
           text-align: center;
           border-radius: 20px;
           font-size: 2rem;
           font-weight: bold;
-          margin-bottom: 20px;
+          padding: 0.1% 0;
+          margin-bottom: 2%;
         }
 
         #agenda {
-          margin-bottom: 5%;
+          width: 80%;
         }
 
         #freeItem {
-          width: 80%;
+          width: 30%;
         }
       }
     }
 
     .contract {
-      width: 80%;
+      width: 100%;
+
       a {
-        margin-bottom: 2%;
         display: flex;
         justify-content: center;
+        margin: 1% 0;
+
+        img {
+          width: 15%;
+        }
       }
     }
-  }
 
-  @media screen and (min-width: 0px) {
-    .content {
-      height: auto;
+    @media screen and (max-width: 1100px) {
+      margin-top: 2%;
+    }
+    @media screen and (max-width: 576px) {
       .mainContent {
+        display: flex;
         flex-direction: column;
-        .pic {
-          margin: 5% auto 10%;
+        align-items: center;
+        width: 100%;
+
+        .winzy {
+          width: 100%;
           display: flex;
           justify-content: center;
-
+          margin-bottom: 8%;
           img {
-            width: 110%;
+            width: 80%;
+            margin: 0;
           }
         }
 
         .agenda {
-          margin-bottom: 8%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
           .icon {
-            width: 70%;
-            height: 30px;
-            font-size: 1.5rem;
-            padding-top: 1%;
-            margin-bottom: 8%;
+            width: 80%;
+            color: white;
+            background: linear-gradient(
+              to right,
+              rgb(255, 19, 146),
+              rgb(255, 102, 0)
+            );
+            text-align: center;
+            border-radius: 20px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            padding: 0.1% 0;
+            margin-bottom: 5%;
           }
 
           #agenda {
             width: 90%;
+            margin-bottom: 5%;
           }
 
           #freeItem {
-            width: 40%;
+            width: 50%;
+            margin-bottom: 5%;
           }
         }
       }
 
       .contract {
-        flex-direction: column;
-        height: auto;
-        margin-bottom: 5%;
+        width: 100%;
 
         a {
+          display: flex;
+          justify-content: center;
+          margin: 1% 0;
+
           img {
             width: 50%;
-          }
-        }
-      }
-    }
-  }
-
-  @media screen and (min-width: 600px) {
-    .content {
-      .mainContent {
-        flex-direction: row;
-        .pic {
-          margin: auto auto;
-          img {
-            width: 110%;
-            margin-left: 25%;
-            margin-top: -10%;
-          }
-        }
-        .agenda {
-          margin-top: 2%;
-          #agenda {
-            width: 65%;
-          }
-          #freeItem {
-            width: 40%;
-          }
-        }
-      }
-      .contract {
-        align-items: center;
-
-        a {
-          img {
-            width: 30%;
-          }
-        }
-      }
-    }
-  }
-  @media screen and (min-width: 768px) {
-    .content {
-      .mainContent {
-        flex-direction: row;
-        .pic {
-          margin: auto auto;
-          img {
-            width: 100%;
-            margin-top: -10%;
-          }
-        }
-        .agenda {
-          margin-top: 2%;
-          #agenda {
-            width: 75%;
-          }
-          #freeItem {
-            width: 35%;
-          }
-        }
-      }
-      .contract {
-        align-items: center;
-
-        a {
-          img {
-            width: 40%;
-          }
-        }
-      }
-    }
-  }
-
-  @media screen and (min-width: 800px) {
-    .content {
-      .mainContent {
-        .contract {
-          a {
-            img {
-              width: 20%;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  @media screen and (min-width: 1280px) {
-    .content {
-      .mainContent {
-        flex-direction: row;
-
-        .pic {
-          margin: auto auto;
-          img {
-            width: 95%;
-            margin-top: -10%;
-          }
-        }
-        .agenda {
-          margin-right: 3%;
-        }
-      }
-      .contract {
-        align-items: center;
-        margin-bottom: 0;
-        margin-top: -5%;
-
-        a {
-          img {
-            width: 20%;
           }
         }
       }
@@ -247,7 +167,7 @@ const Event4 = () => {
       <Nav />
       <div className="content">
         <div className="mainContent">
-          <div className="pic">
+          <div className="winzy">
             <img src={winzy} alt="" srcset="" />
           </div>
           <div className="agenda">
